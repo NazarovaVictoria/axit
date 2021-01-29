@@ -1,0 +1,162 @@
+@charset "UTF-8";
+@import "./fonts.css";
+.intro {
+  background-image: url("../img/фон.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  height: 100vh;
+}
+
+.wrapper {
+  max-width: 1100px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  font-weight: 600;
+}
+
+header {
+  padding: 20px 0;
+  background: #000;
+  height: 70px;
+}
+
+.wrapper-header {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 1;
+}
+
+.logo {
+  font-family: "Myrialpro", sans-serif;
+  font-weight: 600;
+  font-size: 27px;
+  color: #fff;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+.logo span {
+  color: #ff8b38;
+}
+
+.nav {
+  padding-right: 11px;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+}
+.nav li {
+  margin-left: 34px;
+  list-style-type: none;
+}
+.nav a {
+  letter-spacing: 1px;
+  color: #fff;
+  font-family: "OpenSans-SemiBold", sans-serif;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+
+.wr-intro {
+  display: flex;
+  padding: 175px 190px 140px 150px;
+  justify-content: space-around;
+}
+.wr-intro h1 {
+  font-family: "Myrialpro", sans-serif;
+  font-size: 60px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.wr-intro span {
+  color: #ff8b38;
+}
+.wr-intro h2 {
+  font-family: "MyrialPro", sans-serif;
+  font-size: 36px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.wr-intro p {
+  font-family: "Raleway-Light", sans-serif;
+  font-size: 16px;
+  color: #989793;
+  padding-bottom: 50px;
+}
+.wr-intro a {
+  font-family: "OpenSans_SemiBold", sans-serif;
+  font-size: 10px;
+  text-transform: capitalize;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  padding: 13px 30px;
+}
+
+.title-decor {
+  width: 50px;
+  height: 2px;
+  background-color: #fff;
+  margin: 30px 0;
+}
+
+.wrapper-input {
+  background-color: #fff;
+}
+.wrapper-input a {
+  background-color: #ff8b38;
+  font-family: "OpenSans_SemiBold", sans-serif;
+  font-size: 13px;
+  padding: 20px 140px;
+  border-style: none;
+  overflow: hidden;
+}
+
+.title-input p {
+  font-family: "OpenSans-Bold", sans-serif;
+  font-size: 13px;
+  color: #333;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  padding: 20px 55px;
+}
+.title-input span {
+  color: #ff8b38;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-row p {
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 14px;
+  color: #bdbdbd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  background-color: #000;
+}
+
+.footer-row {
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icons p {
+  color: #585858;
+}

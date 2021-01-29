@@ -1,0 +1,48 @@
+@font-face {
+	font-family: "OpenSans_SemiBold";
+	src:
+		url("../fonts/OpenSans/woff2/OpenSans-SemiBold.woff2") format("woff2"),
+		url("../fonts/OpenSans/woff/OpenSans-SemiBold.woff") format("woff"),
+		url("../fonts/OpenSans/ttf/OpenSans-SemiBold.ttf") format("truetype");
+	font-display: swap;
+}
+@font-face {
+	font-family: "OpenSans-Regular";
+	src:
+		url("../fonts/OpenSans/woff2/OpenSans-Regular.woff2") format("woff2"),
+		url("../fonts/OpenSans/woff/OpenSans-Regular.woff") format("woff"),
+		url("../fonts/OpenSans/ttf/OpenSans-Regular.ttf") format("truetype");
+	font-display: swap;
+}
+@font-face {
+	font-family: "OpenSans-Bold";
+	src:
+		url("../fonts/OpenSans/woff2/OpenSans-Bold.woff2") format("woff2"),
+		url("../fonts/OpenSans/woff/OpenSans-Bold.woff") format("woff"),
+		url("../fonts/OpenSans/ttf/OpenSans-Bold.ttf") format("truetype");
+	font-display: swap;
+}
+@font-face {
+	font-family: "MyrialPro-Regular";
+	src:
+		url("../fonts/MyrialPro/woff2/MyriadPro-Regular.woff2") format("woff2"),
+		url("../fonts/MyrialPro/woff/MyriadPro-Regular.woff") format("woff"),
+		url("../fonts/MyrialPro/ttf/MyriadPro-Regular.ttf") format("truetype");
+	font-display: swap;
+}
+@font-face {
+	font-family: "Raleway-Regular";
+	src:
+		url("../fonts/Raleway/woff2/Raleway-Regular.woff2") format("woff2"),
+		url("../fonts/Raleway/woff/Raleway-Regular.woff") format("woff"),
+		url("../fonts/Raleway/ttf/Raleway-Regular.ttf") format("truetype");
+	font-display: swap;
+}
+@font-face {
+	font-family: "Raleway-Light";
+	src:
+		url("../fonts/Raleway/woff2/Raleway-Light.woff2") format("woff2"),
+		url("../fonts/Raleway/woff/Raleway-Light.woff") format("woff"),
+		url("../fonts/Raleway/ttf/Raleway-Light.ttf") format("truetype");
+	font-display: swap;
+}
