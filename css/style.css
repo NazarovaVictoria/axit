@@ -8,6 +8,9 @@
 
 .wrapper {
   max-width: 1100px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   box-sizing: border-box;
@@ -15,14 +18,12 @@
 }
 
 header {
-  padding: 20px 0;
+  padding-top: 20px;
   background: #000;
   height: 70px;
 }
 
-.wrapper-header {
-  max-width: 1100px;
-  margin: 0 auto;
+header .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,13 +37,10 @@ header {
   color: #fff;
   letter-spacing: 1.2px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 .logo span {
   color: #ff8b38;
-}
-
-.nav {
-  padding-right: 11px;
 }
 
 .nav ul {
@@ -63,49 +61,63 @@ header {
 
 .wr-intro {
   display: flex;
-  padding: 175px 190px 140px 150px;
   justify-content: space-around;
 }
-.wr-intro h1 {
-  font-family: "Myrialpro", sans-serif;
+
+.axit-title {
+  margin-top: 110px;
+}
+.axit-title h1 {
+  font-family: "Raleway-Regular", sans-serif;
   font-size: 60px;
   color: #fff;
   text-transform: uppercase;
+  margin: 0;
 }
-.wr-intro span {
+.axit-title span {
   color: #ff8b38;
 }
-.wr-intro h2 {
-  font-family: "MyrialPro", sans-serif;
-  font-size: 36px;
+.axit-title h2 {
+  font-family: "Raleway-Regular", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
   color: #fff;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 33px;
+  line-height: 43px;
 }
-.wr-intro p {
-  font-family: "Raleway-Light", sans-serif;
-  font-size: 16px;
-  color: #989793;
-  padding-bottom: 50px;
-}
-.wr-intro a {
-  font-family: "OpenSans_SemiBold", sans-serif;
-  font-size: 10px;
-  text-transform: capitalize;
-  color: #fff;
-  border: 2px solid #fff;
-  border-radius: 2px;
-  padding: 13px 30px;
-}
-
-.title-decor {
+.axit-title h2::after {
+  content: "";
+  display: block;
   width: 50px;
   height: 2px;
   background-color: #fff;
   margin: 30px 0;
 }
+.axit-title p {
+  font-family: "Raleway-Light", sans-serif;
+  font-size: 13px;
+  color: #989793;
+  padding-bottom: 40px;
+  line-height: 20px;
+}
+.axit-title a {
+  font-family: "OpenSans_SemiBold", sans-serif;
+  font-size: 13px;
+  text-transform: capitalize;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  padding: 13px 30px;
+  text-decoration: none;
+}
 
 .wrapper-input {
   background-color: #fff;
+  margin-top: 140px;
+  width: 360px;
+  height: 365px;
 }
 .wrapper-input a {
   background-color: #ff8b38;
@@ -116,21 +128,26 @@ header {
   overflow: hidden;
 }
 
-.title-input p {
-  font-family: "OpenSans-Bold", sans-serif;
-  font-size: 13px;
-  color: #333;
-  background-color: #f5f5f5;
-  display: flex;
-  justify-content: center;
-  padding: 20px 55px;
-}
-
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.title-input p {
+  font-family: "OpenSans-Bold", sans-serif;
+  font-size: 18px;
+  color: #333;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  padding: 20px 55px;
+  margin: 0;
+}
+.title-input span {
+  color: #ff8b38;
+  white-space: pre;
 }
 
 .input-row p {
@@ -144,9 +161,44 @@ form {
   outline: 0;
 }
 
-.link {
+.submit {
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+}
+
+.input-name {
+  display: flex;
+  cursor: pointer;
+  font-family: "OpenSans-Regular", sans-serif;
+  font-weight: 400;
+  color: #ccc;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #fff #fbfbfb #ccc #fbfbfb;
+  width: 285px;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.get {
   display: flex;
   justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: #ff8b38;
+  padding: 20px;
+  color: #fff;
+  transition: all 0.3s;
+  margin-top: 45px;
+}
+.get:hover {
+  background: #cc4926;
 }
 
 .social-media {
@@ -159,25 +211,51 @@ form {
   align-items: center;
 }
 
-.sm-block {
-  margin-left: 150px;
-}
 .sm-block h4 {
   font-family: "OpenSans-Bold", sans-serif;
   font-size: 20px;
-  margin-top: 10px;
+  margin: 0;
 }
 .sm-block p {
   font-family: "OpenSans-Regular", sans-serif;
   font-size: 14px;
   color: #b4b4b7;
+  margin: 0;
 }
 
-.sm-icons img {
-  padding: 0 30px 0 30px;
+svg {
+  height: 45px;
+  color: #ccc;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: all 0.3s;
 }
-.sm-icons img:first-child {
-  margin-left: 85px;
+svg:first-child {
+  padding-left: 43px;
+}
+svg:last-child {
+  padding-right: 0;
+}
+svg.fa-facebook-f:hover {
+  color: #3d5998;
+}
+svg.fa-twitter:hover {
+  color: #00acee;
+}
+svg.fa-google:hover {
+  color: #db4a39;
+}
+svg.fa-pinterest:hover {
+  color: #c8232c;
+}
+svg.fa-instagram:hover {
+  color: #3f729b;
+}
+svg.fa-stumbleupon:hover {
+  color: #f25037;
+}
+svg.fa-rss:hover {
+  color: #ee802f;
 }
 
 .slider {

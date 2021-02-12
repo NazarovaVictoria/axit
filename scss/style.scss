@@ -1,6 +1,7 @@
 @import "./fonts.css";
 $cw:#fff;
 $cf5: #f5f5f5;
+$orange: #ff8b38;
 .intro {
 	background-image: url("../img/wr-intro/background.jpg");
 	background-size: cover;
@@ -10,27 +11,27 @@ $cf5: #f5f5f5;
 }
 .wrapper {
 	max-width: 1100px;
-	// margin: 0 auto;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
 	padding-left: 15px;
 	padding-right: 15px;
 	box-sizing: border-box;
 	font-weight: 600;
 }
-
 header {
-	padding: 20px 0;
+	padding-top: 20px;
 	background: #000;
 	height: 70px;
 	
 }
-.wrapper-header {
-	max-width: 1100px;
-	margin: 0 auto;
+header .wrapper {
+	// max-width: 1100px;
+	// margin: 0 auto;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	line-height: 1;
-	
 }
 .logo {
 	font-family: "Myrialpro", sans-serif;
@@ -39,13 +40,10 @@ header {
 	color: $cw;
 	letter-spacing: 1.2px;
 	text-transform: uppercase;
+	text-decoration: none;
 	span {
-		color: #ff8b38;
+		color: $orange;
 	}
-   
-}
-.nav {
-	padding-right: 11px;
 }
 .nav {
 	ul {
@@ -65,79 +63,93 @@ header {
 	}
 }
 .wr-intro {
-	
 	display: flex;
-	padding: 175px 190px 140px 150px;
 	justify-content: space-around;
-	
-	
+}
+.axit-title {
+	margin-top: 110px;
 		h1 {
-			font-family: "Myrialpro", sans-serif;
+			font-family: "Raleway-Regular", sans-serif;
 			font-size: 60px;
 			color: $cw;
 			text-transform: uppercase;
+			margin: 0;
 		}
 		span {
-			color: #ff8b38;
+			color: $orange;
 		}
 		h2 {
-			font-family: "MyrialPro", sans-serif;
-			font-size: 36px;
+			font-family: "Raleway-Regular", sans-serif;
+			font-size: 30px;
+			font-weight: 400;
 			color: $cw;
 			text-transform: uppercase;
+			margin: 0;
+			padding-top: 33px;
+			line-height: 43px;
+			&::after {
+				content:"";
+				display: block;
+				width: 50px;
+				height: 2px;
+				background-color: $cw;
+				margin: 30px 0;
+			}
 		}
 		p {
 			font-family: "Raleway-Light", sans-serif;
-			font-size: 16px;
+			font-size: 13px;
 			color: #989793;
-			padding-bottom: 50px;
+			padding-bottom: 40px;
+			line-height: 20px;
 		}
 		a {
 			font-family: "OpenSans_SemiBold", sans-serif;
-			font-size : 10px;
+			font-size : 13px;
 			text-transform: capitalize;
 			color: $cw;
 			border: 2px solid $cw;
 			border-radius: 2px;
 			padding: 13px 30px;
-			
-		}
-}
-.title-decor {
-	width: 50px;
-	height: 2px;
-	background-color: $cw;
-	margin: 30px 0;
+			text-decoration: none;
+		}		
 }
 .wrapper-input {
 	background-color: $cw;
+	margin-top: 140px;
+	width: 360px;
+	height: 365px;
+
 	a {
-		background-color: #ff8b38;
+		background-color: $orange;
 		font-family: "OpenSans_SemiBold", sans-serif;
 		font-size: 13px;
 		padding: 20px 140px;
 		border-style: none;
 		overflow: hidden;
-
 	}
-}
-.title-input {
-// padding: 30px 35px 48px 40px;
-	p {
-		font-family: "OpenSans-Bold", sans-serif;
-		font-size: 13px;
-		color: #333;
-		background-color: $cf5;
-		display: flex;
-		justify-content: center;
-		padding: 20px 55px;
-		}
 }
 form {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+.title-input {
+		p {
+		font-family: "OpenSans-Bold", sans-serif;
+		font-size: 18px;
+		color: #333;
+		background-color: $cf5;
+		display: flex;
+		justify-content: center;
+		padding: 20px 55px;
+		margin: 0;
+		}
+		span {
+			color: $orange;
+			white-space: pre;
+		}
 }
 .input-row {
 	 p {
@@ -150,11 +162,43 @@ form {
 			outline: 0;
 			}
 	 }
-
 }
-.link {
+.submit {
+	position: absolute;
+	overflow: hidden;
+	z-index: -1;
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+}
+.input-name {
+	display: flex;
+	cursor: pointer;
+	font-family: "OpenSans-Regular",sans-serif;
+	font-weight: 400;
+	color: #ccc;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #fff #fbfbfb #ccc #fbfbfb;
+	width: 285px;
+	box-sizing: border-box;
+	padding: 10px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+.get {
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	background: $orange;
+	padding: 20px;
+	color: $cw;
+	transition: all .3s;
+	margin-top: 45px;
+	&:hover {
+		background: #cc4926;
+	}
 }
 .social-media {
 	background: $cw;
@@ -163,36 +207,73 @@ form {
 	height: 108px;
 	display: flex;
 	align-items: center;
+	
 }
 .sm-block {
-	margin-left: 150px;
-	
 	h4 {
 		font-family: "OpenSans-Bold", sans-serif;
 		font-size: 20px;
-		margin-top: 10px;
+		// margin-top: 10px;
+		margin: 0;
 	}
 	p {
 	font-family: "OpenSans-Regular", sans-serif;
 	font-size: 14px;
 	color: #b4b4b7;
+	margin: 0;
 	}
 }
-.sm-icons img {
+.sm-icons {
+	
+}
+svg {
+	height: 45px;
+	color: #ccc;
+	padding-left: 30px;
+	padding-right: 30px;
+	transition: all .3s;
 	&:first-child {
-		margin-left: 85px;
+		padding-left: 43px;
+		
 	}
-		padding: 0 30px 0 30px;
+	&:last-child {
+		padding-right: 0;
+	}
+	// &:hover {
+	// 	color: #cc4926;
+	// }
+	&.fa-facebook-f:hover {
+		color: #3d5998;
+	}
+	&.fa-twitter:hover {
+		color: #00acee;
+	}
+	&.fa-google:hover {
+		color: #db4a39;
+	}
+	&.fa-pinterest:hover {
+		color: #c8232c;
+	}
+	&.fa-instagram:hover {
+		color: #3f729b;
+	}
+	&.fa-stumbleupon:hover {
+		color: #f25037;
+	}
+	&.fa-rss:hover {
+		color: #ee802f;
+	}
 }
 .slider {
 	background: $cf5;
 }
 .slider-wrapper {
 	height: 600px;
-	// img {
+// img {
 	// 	background-color: $cf5;
 	// }
 }
+
 .sub-list {
 	background: $cw;
 }
@@ -223,9 +304,9 @@ form {
 .reviews-wrapper {
 	height: 595px;
 }
-.design {
+// .design {
 
-}
+// }
 .design-wrapper {
 	height: 320px;
 }
@@ -252,9 +333,8 @@ form {
 	
 	img {
 		padding: 20px 15px 0 15px;
-
 	}
-	p{
+	p {
 		font-family: "OpenSans-Regular",sans-serif;
 		font-size: 10px;
 		color: #585858;
