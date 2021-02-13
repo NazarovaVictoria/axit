@@ -230,12 +230,6 @@ svg {
   padding-right: 30px;
   transition: all 0.3s;
 }
-svg:first-child {
-  padding-left: 43px;
-}
-svg:last-child {
-  padding-right: 0;
-}
 svg.fa-facebook-f:hover {
   color: #3d5998;
 }
@@ -258,12 +252,64 @@ svg.fa-rss:hover {
   color: #ee802f;
 }
 
+.fa-facebook-f {
+  padding-left: 43px;
+}
+
+.fa-rss {
+  padding-right: 0;
+}
+
 .slider {
   background: #f5f5f5;
+  height: 595px;
 }
 
 .slider-wrapper {
   height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-wrapper h3 {
+  font-family: "OpenSans-Bold", sans-serif;
+}
+.slider-wrapper p {
+  font-family: "OpenSans-Regular", sans-serif;
+  color: #a2a3ab;
+}
+.slider-wrapper a {
+  text-decoration: none;
+  cursor: pointer;
+  background: #ff8b38;
+  padding: 16px 24px;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.slick-slide {
+  float: none;
+}
+
+.slick-list {
+  height: 600px;
+}
+
+.slick-track {
+  display: block;
+}
+
+.slider-item {
+  height: 110px;
+}
+
+.block {
+  padding-bottom: 52px;
+}
+
+.slider-text {
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .sub-list {
@@ -272,6 +318,34 @@ svg.fa-rss:hover {
 
 .sub-list-wrapper {
   height: 595px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-list-section h3 {
+  font-family: "OpenSans-Bold", sans-serif;
+}
+.sub-list-section h3::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #ff8b38;
+  margin: 30px 0;
+}
+.sub-list-section p {
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 12px;
+  color: #a2a3ab;
+}
+
+.sub-title {
+  display: flex;
+}
+
+.title-block {
+  display: flex;
 }
 
 .standart {
