@@ -397,7 +397,7 @@ svg.fa-rss:hover {
 .standart-text h3::after {
   content: "";
   display: block;
-  width: 50px;
+  width: 65px;
   height: 2px;
   background-color: #ff8b38;
   margin: 30px 0;
@@ -408,12 +408,83 @@ svg.fa-rss:hover {
   color: #a2a3ab;
 }
 
-.why {
+.card-group {
   background: #fff;
+  height: 590px;
 }
 
-.why-wrapper {
-  height: 590px;
+.card-group-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-group-title h2 {
+  font-family: "Raleway-Regular", sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 105px 0 0 0;
+}
+.card-group-title h2::after {
+  content: "";
+  display: block;
+  width: 65px;
+  height: 2px;
+  background-color: #ff8b38;
+  margin: 30px auto;
+}
+.card-group-title p {
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 12px;
+  color: #a2a3ab;
+  margin: 0;
+}
+
+.card-group-wrapper {
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card h3 {
+  font-family: "OpenSans-Bold", sans-serif;
+  font-size: 17px;
+  margin: 0;
+}
+.card p {
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 12px;
+  color: #a2a3ab;
+  padding-top: 30px;
+  margin: 0;
+}
+.card:nth-child(2) {
+  padding: 0 30px 0 30px;
+}
+
+.svg-inline {
+  width: 35px;
+  height: 30px;
+  color: #ff8b38;
+}
+
+.card-svg {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #ff8b38;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  margin: 80px 0 30px 0;
+}
+.card-svg:hover {
+  cursor: pointer;
+  background: rgba(247, 153, 85, 0.3);
 }
 
 .pricing {
