@@ -46,3 +46,11 @@
 		url("../fonts/Raleway/ttf/Raleway-Light.ttf") format("truetype");
 	font-display: swap;
 }
+@font-face {
+	font-family: "Raleway-Bold";
+	src:
+		url("../fonts/Raleway/woff2/Raleway-Bold.woff2") format("woff2"),
+		url("../fonts/Raleway/woff/Raleway-Bold.woff") format("woff"),
+		url("../fonts/Raleway/ttf/Raleway-Bold.ttf") format("truetype");
+	font-display: swap;
+}
