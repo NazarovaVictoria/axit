@@ -112,6 +112,9 @@ header .wrapper {
   padding: 13px 30px;
   text-decoration: none;
 }
+.axit-title a:hover {
+  color: #ee802f;
+}
 
 .wrapper-input {
   background-color: #fff;
@@ -128,7 +131,7 @@ header .wrapper {
   overflow: hidden;
 }
 
-form {
+.form-header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -273,10 +276,13 @@ svg.fa-rss:hover {
 }
 .slider-wrapper h3 {
   font-family: "OpenSans-Bold", sans-serif;
+  margin: 0;
+  padding-bottom: 50px;
 }
 .slider-wrapper p {
   font-family: "OpenSans-Regular", sans-serif;
   color: #a2a3ab;
+  margin: 0;
 }
 .slider-wrapper a {
   text-decoration: none;
@@ -304,7 +310,12 @@ svg.fa-rss:hover {
 }
 
 .block {
-  padding-bottom: 52px;
+  padding-top: 26px;
+  margin: 0;
+}
+
+.btn {
+  margin-top: 50px;
 }
 
 .slider-text {
@@ -630,8 +641,74 @@ svg.fa-rss:hover {
   padding-left: 15px;
 }
 
+.design {
+  background-image: url("../img/design/street.jpg");
+  background-size: cover;
+}
+
 .design-wrapper {
   height: 320px;
+  margin: 0 auto;
+}
+
+.design-group-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.design-group-title h2 {
+  font-family: "Raleway-Regular", sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 74px 0 0 0;
+  color: #fff;
+}
+.design-group-title h2::after {
+  content: "";
+  display: block;
+  width: 65px;
+  height: 2px;
+  background-color: #fff;
+  margin: 30px auto;
+}
+.design-group-title p {
+  font-family: "Raleway-Light", sans-serif;
+  font-size: 12px;
+  color: #9c9992;
+  margin: 0;
+}
+.design-group-title a {
+  font-family: "OpenSans_SemiBold", sans-serif;
+  font-size: 13px;
+  text-transform: capitalize;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 13px 30px;
+  text-decoration: none;
+  margin-top: 33px;
+  margin-bottom: 63px;
+}
+.design-group-title a:hover {
+  color: #ee802f;
+}
+
+.form-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form-footer.form-input {
+  display: flex;
+}
+.form-footer a {
+  text-decoration: none;
+  cursor: pointer;
+  background: #ff8b38;
+  padding: 16px 24px;
+  color: #fff;
+  border-radius: 3px;
 }
 
 .contact {

@@ -1,19 +1,24 @@
 @import "./fonts.css";
+// color
 $cw:#fff;
 $cf5: #f5f5f5;
+$cw-10: #ccc;
+$grey: #a2a3ab;
+$grey-10: #333; 
 $orange: #ff8b38;
+$orange-10: #ee802f;
+$black: #000;
 .intro {
 	background-image: url("../img/wr-intro/background.jpg");
 	background-size: cover;
 	background-position: center bottom;
 	height: 100vh;
-	
 }
 .wrapper {
 	max-width: 1100px;
 	display: flex;
 	margin-left: auto;
-	margin-right: auto;
+	margin-right: auto;  
 	padding-left: 15px;
 	padding-right: 15px;
 	box-sizing: border-box;
@@ -21,7 +26,7 @@ $orange: #ff8b38;
 }
 header {
 	padding-top: 20px;
-	background: #000;
+	background: $black;
 	height: 70px;
 	
 }
@@ -110,6 +115,9 @@ header .wrapper {
 			border-radius: 2px;
 			padding: 13px 30px;
 			text-decoration: none;
+			&:hover {
+				color: $orange-10;
+			}
 		}		
 }
 .wrapper-input {
@@ -127,7 +135,7 @@ header .wrapper {
 		overflow: hidden;
 	}
 }
-form {
+.form-header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -137,7 +145,7 @@ form {
 		p {
 		font-family: "OpenSans-Bold", sans-serif;
 		font-size: 18px;
-		color: #333;
+		color: $grey-10;
 		background-color: $cf5;
 		display: flex;
 		justify-content: center;
@@ -174,10 +182,10 @@ form {
 	cursor: pointer;
 	font-family: "OpenSans-Regular",sans-serif;
 	font-weight: 400;
-	color: #ccc;
+	color: $cw-10;
 	border-style: solid;
 	border-width: 1px;
-	border-color: #fff #fbfbfb #ccc #fbfbfb;
+	border-color: #fff #fbfbfb $cw-10 #fbfbfb;
 	width: 285px;
 	box-sizing: border-box;
 	padding: 10px;
@@ -224,7 +232,7 @@ form {
 
 svg {
 	height: 45px;
-	color: #ccc;
+	color: $cw-10;
 	padding-left: 30px;
 	padding-right: 30px;
 	transition: all .3s;
@@ -247,7 +255,7 @@ svg {
 		color: #f25037;
 	}
 	&.fa-rss:hover {
-		color: #ee802f;
+		color: $orange-10;
 	}
 }
 .fa-facebook-f {
@@ -267,10 +275,13 @@ padding-left: 43px;
 	align-items: center;
 	h3 {
 		font-family: "OpenSans-Bold", sans-serif;
+		margin: 0;
+		padding-bottom: 50px;
 	}
 	p {
 		font-family: "OpenSans-Regular", sans-serif;
-		color: #a2a3ab;
+		color: $grey;
+		margin: 0;
 	}
 	a {
 		text-decoration: none;
@@ -294,7 +305,11 @@ padding-left: 43px;
 	height: 110px;
 }
 .block {
-	padding-bottom: 52px;
+	padding-top: 26px;
+	margin: 0;
+}
+.btn {
+	margin-top: 50px;
 }
 .slider-text {
 	margin-left: 100px;
@@ -325,7 +340,7 @@ padding-left: 43px;
 	p {
 		font-family: "OpenSans-Regular", sans-serif;
 		font-size: 12px;
-		color: #a2a3ab;
+		color: $grey;
 	}
 }
 .title-block {
@@ -382,7 +397,7 @@ padding-left: 43px;
 	p {
 		font-family: "OpenSans-Regular", sans-serif;
 		font-size: 12px;
-		color: #a2a3ab;
+		color: $grey;
 	}
 }
 .card-group {
@@ -414,7 +429,7 @@ padding-left: 43px;
 		p {
 			font-family: "OpenSans-Regular", sans-serif;
 			font-size: 12px;
-			color: #a2a3ab;
+			color: $grey;
 			margin: 0;
 		}
 }
@@ -434,7 +449,7 @@ padding-left: 43px;
 		p {
 			font-family: "OpenSans-Regular", sans-serif;
 			font-size: 12px;
-			color: #a2a3ab;
+			color: $grey;
 			padding-top: 30px;
 			margin: 0;
 		}
@@ -487,12 +502,12 @@ padding-left: 43px;
 		}
 	}
 	th {
-		background-color: #333 ;
+		background-color: $grey-10;
 		color: $cw;
 		height: 59px;
 	}
 	& .first {
-		background-color: #333;
+		background-color: $grey-10;
 		color: $cw;
 		height: 100px;
 		text-align: center;
@@ -601,9 +616,73 @@ padding-left: 43px;
 	flex-direction: column;
 	padding-left: 15px;
 }
+.design {
+	background-image: url("../img/design/street.jpg");
+	background-size: cover;
+}
 .design-wrapper {
 	height: 320px;
+	margin: 0 auto;
 }
+.design-group-title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	h2 {
+		font-family: "Raleway-Regular", sans-serif;
+		text-transform: uppercase;
+		font-size: 30px;
+		font-weight: 400;
+		margin: 74px 0 0 0;
+		color: $cw;
+		&::after {
+			content: "";
+			display: block;
+			width: 65px;
+			height: 2px;
+			background-color: $cw;
+			margin: 30px auto;
+		}
+	}
+	p {
+		font-family: "Raleway-Light", sans-serif;
+		font-size: 12px;
+		color: #9c9992;
+		margin: 0;
+	}
+	a {
+		font-family: "OpenSans_SemiBold", sans-serif;
+		font-size: 13px;
+		text-transform: capitalize;
+		color: $cw;
+		border: 2px solid $cw;
+		padding: 13px 30px;
+		text-decoration: none;
+		margin-top: 33px;
+		margin-bottom: 63px;
+		&:hover {
+			color: $orange-10;
+		}
+	}
+}
+.form-footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	&.form-input {
+		display: flex;
+	}
+	a {
+		text-decoration: none;
+		cursor: pointer;
+		background: $orange;
+		padding: 16px 24px;
+		color: $cw;
+		border-radius: 3px;
+	}
+}
+
 .contact {
 	background: $cw;
 }
@@ -612,7 +691,7 @@ padding-left: 43px;
 }
 
 .footer {
-	background-color: #000;
+	background-color: $black;
 }
 .footer-row {
 	display: flex;
