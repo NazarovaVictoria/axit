@@ -1,4 +1,5 @@
 @import "./fonts.css";
+@import "./reset.css";
 .intro {
   background-image: url("../img/wr-intro/background.jpg");
   background-size: cover;
@@ -18,9 +19,8 @@
 }
 
 header {
-  padding-top: 20px;
+  padding: 20px 0;
   background: #000;
-  height: 70px;
 }
 
 header .wrapper {
@@ -64,30 +64,30 @@ header .wrapper {
   justify-content: space-around;
 }
 
-.axit-title {
-  margin-top: 110px;
+.axit-title-form {
+  display: flex;
+  padding-top: 200px;
 }
-.axit-title h1 {
+
+.axit-title .axit-title-title {
   font-family: "Raleway-Regular", sans-serif;
   font-size: 60px;
   color: #fff;
   text-transform: uppercase;
-  margin: 0;
+  margin-bottom: 30px;
 }
 .axit-title span {
   color: #ff8b38;
 }
-.axit-title h2 {
+.axit-title h1 {
   font-family: "Raleway-Regular", sans-serif;
   font-size: 30px;
   font-weight: 400;
   color: #fff;
   text-transform: uppercase;
-  margin: 0;
-  padding-top: 33px;
   line-height: 43px;
 }
-.axit-title h2::after {
+.axit-title h1::after {
   content: "";
   display: block;
   width: 50px;
@@ -99,7 +99,7 @@ header .wrapper {
   font-family: "Raleway-Light", sans-serif;
   font-size: 13px;
   color: #989793;
-  padding-bottom: 40px;
+  margin-bottom: 45px;
   line-height: 20px;
 }
 .axit-title a {
@@ -112,93 +112,82 @@ header .wrapper {
   padding: 13px 30px;
   text-decoration: none;
 }
-.axit-title a:hover {
-  color: #ee802f;
-}
-
-.wrapper-input {
-  background-color: #fff;
-  margin-top: 140px;
-  width: 360px;
-  height: 365px;
-}
-.wrapper-input a {
-  background-color: #ff8b38;
-  font-family: "OpenSans_SemiBold", sans-serif;
-  font-size: 13px;
-  padding: 20px 140px;
-  border-style: none;
-  overflow: hidden;
-}
 
 .form-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  background-color: #fff;
+  width: 360px;
 }
 
-.title-input p {
+.form-title {
+  text-align: center;
+}
+.form-title p {
   font-family: "OpenSans-Bold", sans-serif;
   font-size: 18px;
   color: #333;
   background-color: #f5f5f5;
   display: flex;
   justify-content: center;
-  padding: 20px 55px;
-  margin: 0;
+  padding: 20px;
 }
-.title-input span {
+.form-title span {
   color: #ff8b38;
   white-space: pre;
 }
 
-.input-row p {
+.form-group {
   font-family: "OpenSans-Regular", sans-serif;
   font-size: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  margin-bottom: 40px;
 }
-.input-row p input {
-  outline: 0;
+
+.form-input {
+  width: 80%;
+  padding: 40px 0 10px 0;
+  font-family: "OpenSans-Regular", sans-serif;
+  color: #bdbdbd;
+  border: none;
+  border-bottom: 1px solid #d6d6d6;
+  background-color: transparent;
+  outline: none;
+  transition: 0.3s;
+}
+.form-input:focus {
+  border-bottom: 1px solid #1a73a8;
+}
+
+.form-label {
+  display: flex;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  transition: 0.3s;
+  cursor: pointer;
+  margin: 40px;
+}
+.form-label:last-child {
+  margin-bottom: 55px;
 }
 
 .submit {
-  position: absolute;
-  overflow: hidden;
-  z-index: -1;
-  width: 0.1px;
-  height: 0.1px;
   opacity: 0;
-}
-
-.input-name {
-  display: flex;
-  cursor: pointer;
-  font-family: "OpenSans-Regular", sans-serif;
-  font-weight: 400;
-  color: #ccc;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #fff #fbfbfb #ccc #fbfbfb;
-  width: 285px;
-  box-sizing: border-box;
-  padding: 10px;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 .get {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "OpenSans_SemiBold", sans-serif;
+  font-size: 14px;
   cursor: pointer;
   background: #ff8b38;
   padding: 20px;
   color: #fff;
   transition: all 0.3s;
-  margin-top: 45px;
 }
 .get:hover {
   background: #cc4926;
@@ -217,20 +206,20 @@ header .wrapper {
 .sm-block h4 {
   font-family: "OpenSans-Bold", sans-serif;
   font-size: 20px;
-  margin: 0;
+  padding-bottom: 5px;
 }
 .sm-block p {
   font-family: "OpenSans-Regular", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   color: #b4b4b7;
-  margin: 0;
+  padding: 5px 0;
 }
 
 svg {
   height: 45px;
   color: #ccc;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 35px;
+  padding-right: 35px;
   transition: all 0.3s;
 }
 svg.fa-facebook-f:hover {

@@ -1,4 +1,6 @@
 @import "./fonts.css";
+@import "./reset.css";
+
 // color
 $cw:#fff;
 $cf5: #f5f5f5;
@@ -25,10 +27,8 @@ $black: #000;
 	font-weight: 600;
 }
 header {
-	padding-top: 20px;
+	padding: 20px 0;
 	background: $black;
-	height: 70px;
-	
 }
 header .wrapper {
 	display: flex;
@@ -69,26 +69,28 @@ header .wrapper {
 	display: flex;
 	justify-content: space-around;
 }
+.axit-title-form {
+	display: flex;
+	padding-top: 200px;
+	
+}
 .axit-title {
-	margin-top: 110px;
-		h1 {
+		& .axit-title-title {
 			font-family: "Raleway-Regular", sans-serif;
 			font-size: 60px;
 			color: $cw;
 			text-transform: uppercase;
-			margin: 0;
+			margin-bottom: 30px;
 		}
 		span {
 			color: $orange;
 		}
-		h2 {
+		h1 {
 			font-family: "Raleway-Regular", sans-serif;
 			font-size: 30px;
 			font-weight: 400;
 			color: $cw;
 			text-transform: uppercase;
-			margin: 0;
-			padding-top: 33px;
 			line-height: 43px;
 			&::after {
 				content:"";
@@ -103,7 +105,7 @@ header .wrapper {
 			font-family: "Raleway-Light", sans-serif;
 			font-size: 13px;
 			color: #989793;
-			padding-bottom: 40px;
+			margin-bottom: 45px;
 			line-height: 20px;
 		}
 		a {
@@ -115,33 +117,14 @@ header .wrapper {
 			border-radius: 2px;
 			padding: 13px 30px;
 			text-decoration: none;
-			&:hover {
-				color: $orange-10;
-			}
 		}		
 }
-.wrapper-input {
-	background-color: $cw;
-	margin-top: 140px;
-	width: 360px;
-	height: 365px;
-
-	a {
-		background-color: $orange;
-		font-family: "OpenSans_SemiBold", sans-serif;
-		font-size: 13px;
-		padding: 20px 140px;
-		border-style: none;
-		overflow: hidden;
-	}
-}
 .form-header {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	background-color: $cw;
+	width: 360px;
 }
-.title-input {
+.form-title {
+	text-align: center;
 		p {
 		font-family: "OpenSans-Bold", sans-serif;
 		font-size: 18px;
@@ -149,59 +132,63 @@ header .wrapper {
 		background-color: $cf5;
 		display: flex;
 		justify-content: center;
-		padding: 20px 55px;
-		margin: 0;
+		padding: 20px;
 		}
 		span {
 			color: $orange;
 			white-space: pre;
 		}
 }
-.input-row {
-	 p {
-		font-family: "OpenSans-Regular", sans-serif;
+.form-group {
+	  font-family: "OpenSans-Regular", sans-serif;
 		font-size: 12px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-			input {
-			outline: 0;
-			}
-	 }
+		position: relative;
+		margin-bottom: 40px;
+	 
+}
+.form-input {
+	width: 80%;
+	padding: 40px 0 10px 0;
+	font-family: "OpenSans-Regular", sans-serif;
+	color: #bdbdbd;
+	border: none;
+	border-bottom: 1px solid #d6d6d6;
+	background-color: transparent;
+	outline: none;
+	transition :0.3s;
+	&:focus {
+		border-bottom: 1px solid #1a73a8;
+	}
+}
+.form-label {
+	display: flex;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	transition :0.3s;
+	cursor: pointer;
+	margin: 40px;
+		&:last-child {
+			margin-bottom: 55px;
+		}
 }
 .submit {
-	position: absolute;
-	overflow: hidden;
-	z-index: -1;
-	width: 0.1px;
-	height: 0.1px;
 	opacity: 0;
-}
-.input-name {
-	display: flex;
-	cursor: pointer;
-	font-family: "OpenSans-Regular",sans-serif;
-	font-weight: 400;
-	color: $cw-10;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #fff #fbfbfb $cw-10 #fbfbfb;
-	width: 285px;
-	box-sizing: border-box;
-	padding: 10px;
-	margin-left: 40px;
-	margin-right: 40px;
 }
 .get {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-family: "OpenSans_SemiBold", sans-serif;
+	font-size: 14px;
 	cursor: pointer;
 	background: $orange;
 	padding: 20px;
 	color: $cw;
 	transition: all .3s;
-	margin-top: 45px;
 	&:hover {
 		background: #cc4926;
 	}
@@ -220,21 +207,21 @@ header .wrapper {
 	h4 {
 		font-family: "OpenSans-Bold", sans-serif;
 		font-size: 20px;
-		margin: 0;
+		padding-bottom: 5px;
 	}
 	p {
 	font-family: "OpenSans-Regular", sans-serif;
-	font-size: 14px;
+	font-size: 12px;
 	color: #b4b4b7;
-	margin: 0;
+	padding: 5px 0;
 	}
 }
 
 svg {
 	height: 45px;
 	color: $cw-10;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 35px;
+	padding-right: 35px;
 	transition: all .3s;
 	&.fa-facebook-f:hover {
 		color: #3d5998;
