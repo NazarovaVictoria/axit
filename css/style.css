@@ -149,7 +149,6 @@ header .wrapper {
   width: 80%;
   padding: 40px 0 10px 0;
   font-family: "OpenSans-Regular", sans-serif;
-  color: #bdbdbd;
   border: none;
   border-bottom: 1px solid #d6d6d6;
   background-color: transparent;
@@ -215,40 +214,43 @@ header .wrapper {
   padding: 5px 0;
 }
 
-svg {
+.sm-icons {
+  display: flex;
+}
+.sm-icons svg {
   height: 45px;
   color: #ccc;
   padding-left: 35px;
   padding-right: 35px;
   transition: all 0.3s;
 }
-svg.fa-facebook-f:hover {
+.sm-icons svg.fa-facebook-f:hover {
   color: #3d5998;
 }
-svg.fa-twitter:hover {
+.sm-icons svg.fa-twitter:hover {
   color: #00acee;
 }
-svg.fa-google:hover {
+.sm-icons svg.fa-google:hover {
   color: #db4a39;
 }
-svg.fa-pinterest:hover {
+.sm-icons svg.fa-pinterest:hover {
   color: #c8232c;
 }
-svg.fa-instagram:hover {
+.sm-icons svg.fa-instagram:hover {
   color: #3f729b;
 }
-svg.fa-stumbleupon:hover {
+.sm-icons svg.fa-stumbleupon:hover {
   color: #f25037;
 }
-svg.fa-rss:hover {
+.sm-icons svg.fa-rss:hover {
   color: #ee802f;
 }
 
-.fa-facebook-f {
-  padding-left: 43px;
+.sm-icons .fa-facebook-f {
+  padding-left: 65px;
 }
 
-.fa-rss {
+.sm-icons .fa-rss {
   padding-right: 0;
 }
 
@@ -265,21 +267,27 @@ svg.fa-rss:hover {
 }
 .slider-wrapper h3 {
   font-family: "OpenSans-Bold", sans-serif;
-  margin: 0;
+  font-size: 16px;
   padding-bottom: 50px;
 }
 .slider-wrapper p {
   font-family: "OpenSans-Regular", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
   color: #a2a3ab;
-  margin: 0;
+  padding-bottom: 13px;
 }
 .slider-wrapper a {
+  font-family: "OpenSans_SemiBold", sans-serif;
+  font-size: 12px;
   text-decoration: none;
   cursor: pointer;
   background: #ff8b38;
   padding: 16px 24px;
   color: #fff;
   border-radius: 3px;
+  display: inline-block;
+  margin-top: 50px;
 }
 
 .slick-slide {
@@ -296,15 +304,6 @@ svg.fa-rss:hover {
 
 .slider-item {
   height: 110px;
-}
-
-.block {
-  padding-top: 26px;
-  margin: 0;
-}
-
-.btn {
-  margin-top: 50px;
 }
 
 .slider-text {
@@ -328,6 +327,7 @@ svg.fa-rss:hover {
 }
 .sub-list-section h3 {
   font-family: "OpenSans-Bold", sans-serif;
+  font-size: 16px;
 }
 .sub-list-section h3::after {
   content: "";
@@ -340,6 +340,7 @@ svg.fa-rss:hover {
 .sub-list-section p {
   font-family: "OpenSans-Regular", sans-serif;
   font-size: 12px;
+  line-height: 20px;
   color: #a2a3ab;
 }
 
@@ -393,6 +394,7 @@ svg.fa-rss:hover {
 }
 .standart-text h3 {
   font-family: "OpenSans-Bold", sans-serif;
+  font-style: 16px;
 }
 .standart-text h3::after {
   content: "";
@@ -406,6 +408,7 @@ svg.fa-rss:hover {
   font-family: "OpenSans-Regular", sans-serif;
   font-size: 12px;
   color: #a2a3ab;
+  line-height: 20px;
 }
 
 .card-group {
@@ -437,7 +440,6 @@ svg.fa-rss:hover {
   font-family: "OpenSans-Regular", sans-serif;
   font-size: 12px;
   color: #a2a3ab;
-  margin: 0;
 }
 
 .card-group-wrapper {
@@ -460,7 +462,7 @@ svg.fa-rss:hover {
   font-size: 12px;
   color: #a2a3ab;
   padding-top: 30px;
-  margin: 0;
+  line-height: 20px;
 }
 .card:nth-child(2) {
   padding: 0 30px 0 30px;
@@ -579,6 +581,7 @@ svg.fa-rss:hover {
 .customer-reviews .customer {
   font-family: "OpenSans-Regular", sans-serif;
   font-size: 12px;
+  line-height: 20px;
   color: #949598;
   background-color: #f5f5f5;
   padding: 25px 12px;
@@ -613,7 +616,7 @@ svg.fa-rss:hover {
 .customer-name .name {
   font-family: "OpenSans-Bold", sans-serif;
   font-size: 20px;
-  margin: 0;
+  padding-bottom: 10px;
 }
 .customer-name .profession {
   font-family: "OpenSans-Regular", sans-serif;
@@ -628,6 +631,7 @@ svg.fa-rss:hover {
 .block-name {
   flex-direction: column;
   padding-left: 15px;
+  margin-top: 15px;
 }
 
 .design {
@@ -700,12 +704,21 @@ svg.fa-rss:hover {
   border-radius: 3px;
 }
 
+.form-wrapper {
+  display: flex;
+}
+
+.form-btn {
+  margin-top: 60px;
+}
+
 .contact {
   background: #fff;
 }
 
 .contact-wrapper {
   height: 615px;
+  width: 100vw;
 }
 
 .footer {

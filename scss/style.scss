@@ -153,7 +153,6 @@ header .wrapper {
 	width: 80%;
 	padding: 40px 0 10px 0;
 	font-family: "OpenSans-Regular", sans-serif;
-	color: #bdbdbd;
 	border: none;
 	border-bottom: 1px solid #d6d6d6;
 	background-color: transparent;
@@ -216,39 +215,48 @@ header .wrapper {
 	padding: 5px 0;
 	}
 }
+.sm-icons {
+	display: flex;
+	
+	& svg {
+		height: 45px;
+		color: $cw-10;
+		padding-left: 35px;
+		padding-right: 35px;
+		transition: all .3s;
+		&.fa-facebook-f:hover {
+			color: #3d5998;
+		}
 
-svg {
-	height: 45px;
-	color: $cw-10;
-	padding-left: 35px;
-	padding-right: 35px;
-	transition: all .3s;
-	&.fa-facebook-f:hover {
-		color: #3d5998;
-	}
-	&.fa-twitter:hover {
-		color: #00acee;
-	}
-	&.fa-google:hover {
-		color: #db4a39;
-	}
-	&.fa-pinterest:hover {
-		color: #c8232c;
-	}
-	&.fa-instagram:hover {
-		color: #3f729b;
-	}
-	&.fa-stumbleupon:hover {
-		color: #f25037;
-	}
-	&.fa-rss:hover {
-		color: $orange-10;
+		&.fa-twitter:hover {
+			color: #00acee;
+		}
+
+		&.fa-google:hover {
+			color: #db4a39;
+		}
+
+		&.fa-pinterest:hover {
+			color: #c8232c;
+		}
+
+		&.fa-instagram:hover {
+			color: #3f729b;
+		}
+
+		&.fa-stumbleupon:hover {
+			color: #f25037;
+		}
+
+		&.fa-rss:hover {
+			color: $orange-10;
+		}
 	}
 }
-.fa-facebook-f {
-padding-left: 43px;
+.sm-icons .fa-facebook-f {
+padding-left: 65px;
 }
-.fa-rss {
+.sm-icons .fa-rss {
 	padding-right: 0;
 }
 .slider {
@@ -262,21 +270,27 @@ padding-left: 43px;
 	align-items: center;
 	h3 {
 		font-family: "OpenSans-Bold", sans-serif;
-		margin: 0;
+		font-size: 16px;
 		padding-bottom: 50px;
 	}
 	p {
 		font-family: "OpenSans-Regular", sans-serif;
+		font-size: 12px;
+		line-height: 20px;
 		color: $grey;
-		margin: 0;
+		padding-bottom: 13px;
 	}
 	a {
+		font-family: "OpenSans_SemiBold", sans-serif;
+		font-size: 12px;
 		text-decoration: none;
 		cursor: pointer;
 		background: $orange;
 		padding: 16px 24px;
 		color: $cw;
 		border-radius: 3px;
+		display: inline-block;
+		margin-top: 50px;
 	}
 }
 .slick-slide {
@@ -290,13 +304,6 @@ padding-left: 43px;
 }
 .slider-item {
 	height: 110px;
-}
-.block {
-	padding-top: 26px;
-	margin: 0;
-}
-.btn {
-	margin-top: 50px;
 }
 .slider-text {
 	margin-left: 100px;
@@ -315,6 +322,7 @@ padding-left: 43px;
 	padding-left: 200px;
 	h3 {
  		font-family: "OpenSans-Bold", sans-serif;
+		 font-size: 16px;
 		 &::after {
 		 	content: "";
 		 	display: block;
@@ -327,6 +335,7 @@ padding-left: 43px;
 	p {
 		font-family: "OpenSans-Regular", sans-serif;
 		font-size: 12px;
+		line-height: 20px;
 		color: $grey;
 	}
 }
@@ -372,6 +381,7 @@ padding-left: 43px;
 	padding-right: 200px;
 	h3 {
 		font-family: "OpenSans-Bold", sans-serif;
+		font-style: 16px;
 		 &::after {
 		 	content: "";
 		 	display: block;
@@ -385,6 +395,7 @@ padding-left: 43px;
 		font-family: "OpenSans-Regular", sans-serif;
 		font-size: 12px;
 		color: $grey;
+		line-height: 20px;
 	}
 }
 .card-group {
@@ -417,7 +428,6 @@ padding-left: 43px;
 			font-family: "OpenSans-Regular", sans-serif;
 			font-size: 12px;
 			color: $grey;
-			margin: 0;
 		}
 }
 .card-group-wrapper {
@@ -438,7 +448,7 @@ padding-left: 43px;
 			font-size: 12px;
 			color: $grey;
 			padding-top: 30px;
-			margin: 0;
+			line-height: 20px;
 		}
 		&:nth-child(2) {
 			padding: 0 30px 0 30px;
@@ -553,6 +563,7 @@ padding-left: 43px;
 	& .customer {
 		font-family: "OpenSans-Regular", sans-serif;
 		font-size: 12px;
+		line-height: 20px;
 		color: #949598;
 		background-color: #f5f5f5;
 		padding: 25px 12px;
@@ -587,7 +598,7 @@ padding-left: 43px;
 	& .name {
 		font-family: "OpenSans-Bold", sans-serif;
 		font-size: 20px;
-		margin: 0;
+		padding-bottom: 10px;
 	}
 	& .profession {
 		font-family: "OpenSans-Regular", sans-serif;
@@ -602,6 +613,7 @@ padding-left: 43px;
 .block-name {
 	flex-direction: column;
 	padding-left: 15px;
+	margin-top: 15px;
 }
 .design {
 	background-image: url("../img/design/street.jpg");
@@ -669,12 +681,19 @@ padding-left: 43px;
 		border-radius: 3px;
 	}
 }
+.form-wrapper {
+	display: flex;
+}
+.form-btn {
+	margin-top: 60px;
+}
 
 .contact {
 	background: $cw;
 }
 .contact-wrapper {
 	height: 615px;
+	width: 100vw;
 }
 
 .footer {
