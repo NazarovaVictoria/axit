@@ -17,7 +17,7 @@ $black: #000;
 	height: 100vh;
 }
 .wrapper {
-	max-width: 1100px;
+	max-width: 1130px;
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;  
@@ -82,6 +82,11 @@ header .wrapper {
 			text-transform: uppercase;
 			margin-bottom: 30px;
 		}
+		& .title-decor {
+			width: 50px;
+			height: 2px;
+			background-color: $cw;
+		}
 		span {
 			color: $orange;
 		}
@@ -92,14 +97,15 @@ header .wrapper {
 			color: $cw;
 			text-transform: uppercase;
 			line-height: 43px;
-			&::after {
-				content:"";
-				display: block;
-				width: 50px;
-				height: 2px;
-				background-color: $cw;
-				margin: 30px 0;
-			}
+			margin-bottom: 30px;
+			// &::after {
+			// 	content:"";
+			// 	display: block;
+			// 	width: 50px;
+			// 	height: 2px;
+			// 	background-color: $cw;
+			// 	margin: 30px 0;
+			// }
 		}
 		p {
 			font-family: "Raleway-Light", sans-serif;
@@ -147,7 +153,6 @@ header .wrapper {
 		align-items: center;
 		position: relative;
 		margin-bottom: 40px;
-	 
 }
 .form-input {
 	width: 80%;
@@ -314,28 +319,18 @@ header .wrapper {
 }
 .sub-list-wrapper {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	margin-top: 110px;
 	margin-bottom: 140px;
 }
 .img {
 	max-width: 455px;
+	// width: 41.36%;
 }
+
 .sub-list-section {
-	padding-left: 200px;
-	h3 {
- 		font-family: "OpenSans-Bold", sans-serif;
-		 font-size: 16px;
-		 &::after {
-		 	content: "";
-		 	display: block;
-		 	width: 50px;
-		 	height: 2px;
-		 	background-color: $orange;
-		 	margin: 30px 0;
-		}
-	}
+	width: 41.36%;
 	p {
 		font-family: "OpenSans-Regular", sans-serif;
 		font-size: 12px;
@@ -343,11 +338,33 @@ header .wrapper {
 		color: $grey;
 	}
 }
-.subject-block {
-	display: flex;
+.sub-list-title {
+	& .title-decor {
+	width: 50px;
+	height: 2px;
+	background-color: $orange;
+	}
+	h3 {
+	font-family: "OpenSans-Bold", sans-serif;
+	font-size: 16px;
+	margin-bottom: 30px;
+	}
+	p {
+	font-family: "OpenSans-Regular", sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	color: $grey;
+	margin-top: 30px;
+	}
 }
-.suject {
-	padding-left: 30px;
+.title-block {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-top: 45px;
+}
+.title-block-heading {
+	max-width: 355px;	
 }
 .title-block-img {
 	width: 40px;
@@ -358,7 +375,6 @@ header .wrapper {
 	justify-content: center;
 	align-items: center;
 	transition: all .3s;
-	margin-top: 20px;
 		&:hover {
 			cursor: pointer;
 			background: rgba(247, 153, 85, .3);
@@ -374,13 +390,14 @@ header .wrapper {
 }
 .standart-wrapper {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	margin-top: 90px;
 	margin-bottom: 130px;
 }
 .standart-text {
-	padding-right: 200px;
+	// max-width: 480px;
+	width: 41.36%;
 	h3 {
 		font-family: "OpenSans-Bold", sans-serif;
 		font-style: 16px;
@@ -404,33 +421,29 @@ header .wrapper {
 	background: $cw;
 	
 }
-.card-wrapper {
-
-}
 .card-group-title {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-		h2 {
-			font-family: "Raleway-Regular", sans-serif;
-			text-transform: uppercase;
-			font-size: 30px;
-			font-weight: 400;
-			margin: 105px 0 0 0;
-			 &::after {
-			 	content: "";
-			 	display: block;
-			 	width: 65px;
-			 	height: 2px;
-			 	background-color: $orange;
-			 	margin: 30px auto;
-			 }
-		}
-		p {
-			font-family: "OpenSans-Regular", sans-serif;
-			font-size: 12px;
-			color: $grey;
-		}
+	& .title-decor {
+		width: 65px;
+		height: 2px;
+		background-color: $orange;
+	}
+	h2 {
+		font-family: "Raleway-Regular", sans-serif;
+		text-transform: uppercase;
+		font-size: 30px;
+		font-weight: 400;
+		margin: 105px 0 30px 0;
+		
+	}
+	p {
+		font-family: "OpenSans-Regular", sans-serif;
+		font-size: 12px;
+		color: $grey;
+		margin-top: 30px;
+	}
 }
 .card-group-wrapper {
 	display: flex;
@@ -481,44 +494,43 @@ header .wrapper {
 	background: $cf5;
 }
 .pricing-wrapper {
-	height: 880px;
+	margin-bottom: 96px;
 }
-.table {
+.pricing-card {
+	// width: 33.333%;
+	min-width: 343px;
+	&:nth-child(2) {
+		margin: 0 40px 0 40px;
+	}
+}
+.pricing-card-wrapper {
 	display: flex;
+	justify-content: space-between;
 	align-items: flex-end;
 	margin-top: 80px;
-	table {
-		width: 345px;
-		
-		// border-collapse: collapse;
-		td {
-			text-align: center;
-			background-color: $cw;
-			font-family: "OpenSans-Regular", sans-serif;
-			font-size: 12px;
-			height: 40px;
-			color: #c3c3c5;
-			text-transform: uppercase;
-		}
-	}
-	th {
-		background-color: $grey-10;
+}
+.pricing-card-body {
+	text-align: center;
+	& .pricing-card-caption {
+		font-family: "OpenSans-Bold", sans-serif;
+		font-size: 16px;
 		color: $cw;
-		height: 59px;
+		background-color: #333;
+		padding: 22px 0;
+		border-bottom: 2px solid $cw;
 	}
-	& .first {
-		background-color: $grey-10;
-		color: $cw;
-		height: 100px;
-		text-align: center;
-		font-family: "Raleway-Bold", sans-serif;
+	& .price {
+		font-family: "Raleway-Bold",
+		sans-serif;
 		font-size: 33px;
+		color: $cw;
+		background-color: #333;
 		& .zero {
 			font-size: 57px;
 		}
 		& .seven {
-			font-size: 67px;
-		}
+				font-size: 67px;
+			}
 		& .nine {
 			font-size: 69px;
 		}
@@ -526,31 +538,38 @@ header .wrapper {
 			font-size: 54px;
 		}
 	}
-	& .second {
-		background-color: #333;
-		color: #999;
-		height: 51px;
+	p {
 		font-family: "OpenSans_SemiBold", sans-serif;
 		font-size: 11px;
+		color: #999;
 		font-style: italic;
 		text-transform: inherit;
+		background-color: #333;
+		padding: 20px 0 22px 0;
+		border-bottom: 5px solid $orange;
 	}
-	& .orange {
-		background: $orange;
-		height: 6px;
-	}
-	& .middle {
-		background: $orange;
-		height: 40px;
+	& .pricing-card-item {
 		font-family: "OpenSans-Bold", sans-serif;
-		font-size: 11px;
-		text-transform: uppercase;
+		font-size: 10px;
 		color: $cw;
-		
+		text-transform: uppercase;
+		background-color: $orange;
+		padding: 14px;
 	}
-	.table-middle {
-		margin: 0 40px;
+}
+.features {
+	text-align: center;
+	background-color: $cw;
+	font-family: "OpenSans-Regular", sans-serif;
+	font-size: 12px;
+	font-weight: 300;
+	color: #c3c3c5;
+	text-transform: uppercase;
+	& .features-item {
+		border-bottom: 1px solid #f5f5f5;
+		padding: 14px 0;
 	}
+	
 }
 .reviews {
 	background: $cw;

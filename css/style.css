@@ -8,7 +8,7 @@
 }
 
 .wrapper {
-  max-width: 1100px;
+  max-width: 1130px;
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -76,6 +76,11 @@ header .wrapper {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
+.axit-title .title-decor {
+  width: 50px;
+  height: 2px;
+  background-color: #fff;
+}
 .axit-title span {
   color: #ff8b38;
 }
@@ -86,14 +91,7 @@ header .wrapper {
   color: #fff;
   text-transform: uppercase;
   line-height: 43px;
-}
-.axit-title h1::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 2px;
-  background-color: #fff;
-  margin: 30px 0;
+  margin-bottom: 30px;
 }
 .axit-title p {
   font-family: "Raleway-Light", sans-serif;
@@ -317,7 +315,7 @@ header .wrapper {
 
 .sub-list-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 110px;
   margin-bottom: 140px;
@@ -328,19 +326,7 @@ header .wrapper {
 }
 
 .sub-list-section {
-  padding-left: 200px;
-}
-.sub-list-section h3 {
-  font-family: "OpenSans-Bold", sans-serif;
-  font-size: 16px;
-}
-.sub-list-section h3::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 2px;
-  background-color: #ff8b38;
-  margin: 30px 0;
+  width: 41.36%;
 }
 .sub-list-section p {
   font-family: "OpenSans-Regular", sans-serif;
@@ -349,12 +335,33 @@ header .wrapper {
   color: #a2a3ab;
 }
 
-.subject-block {
-  display: flex;
+.sub-list-title .title-decor {
+  width: 50px;
+  height: 2px;
+  background-color: #ff8b38;
+}
+.sub-list-title h3 {
+  font-family: "OpenSans-Bold", sans-serif;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.sub-list-title p {
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  color: #a2a3ab;
+  margin-top: 30px;
 }
 
-.suject {
-  padding-left: 30px;
+.title-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 45px;
+}
+
+.title-block-heading {
+  max-width: 355px;
 }
 
 .title-block-img {
@@ -366,7 +373,6 @@ header .wrapper {
   justify-content: center;
   align-items: center;
   transition: all 0.3s;
-  margin-top: 20px;
 }
 .title-block-img:hover {
   cursor: pointer;
@@ -385,14 +391,14 @@ header .wrapper {
 
 .standart-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 90px;
   margin-bottom: 130px;
 }
 
 .standart-text {
-  padding-right: 200px;
+  width: 41.36%;
 }
 .standart-text h3 {
   font-family: "OpenSans-Bold", sans-serif;
@@ -422,25 +428,23 @@ header .wrapper {
   flex-direction: column;
   align-items: center;
 }
+.card-group-title .title-decor {
+  width: 65px;
+  height: 2px;
+  background-color: #ff8b38;
+}
 .card-group-title h2 {
   font-family: "Raleway-Regular", sans-serif;
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 400;
-  margin: 105px 0 0 0;
-}
-.card-group-title h2::after {
-  content: "";
-  display: block;
-  width: 65px;
-  height: 2px;
-  background-color: #ff8b38;
-  margin: 30px auto;
+  margin: 105px 0 30px 0;
 }
 .card-group-title p {
   font-family: "OpenSans-Regular", sans-serif;
   font-size: 12px;
   color: #a2a3ab;
+  margin-top: 30px;
 }
 
 .card-group-wrapper {
@@ -497,74 +501,83 @@ header .wrapper {
 }
 
 .pricing-wrapper {
-  height: 880px;
+  margin-bottom: 96px;
 }
 
-.table {
+.pricing-card {
+  min-width: 343px;
+}
+.pricing-card:nth-child(2) {
+  margin: 0 40px 0 40px;
+}
+
+.pricing-card-wrapper {
   display: flex;
+  justify-content: space-between;
   align-items: flex-end;
   margin-top: 80px;
 }
-.table table {
-  width: 345px;
+
+.pricing-card-body {
+  text-align: center;
 }
-.table table td {
+.pricing-card-body .pricing-card-caption {
+  font-family: "OpenSans-Bold", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background-color: #333;
+  padding: 22px 0;
+  border-bottom: 2px solid #fff;
+}
+.pricing-card-body .price {
+  font-family: "Raleway-Bold", sans-serif;
+  font-size: 33px;
+  color: #fff;
+  background-color: #333;
+}
+.pricing-card-body .price .zero {
+  font-size: 57px;
+}
+.pricing-card-body .price .seven {
+  font-size: 67px;
+}
+.pricing-card-body .price .nine {
+  font-size: 69px;
+}
+.pricing-card-body .price .one {
+  font-size: 54px;
+}
+.pricing-card-body p {
+  font-family: "OpenSans_SemiBold", sans-serif;
+  font-size: 11px;
+  color: #999;
+  font-style: italic;
+  text-transform: inherit;
+  background-color: #333;
+  padding: 20px 0 22px 0;
+  border-bottom: 5px solid #ff8b38;
+}
+.pricing-card-body .pricing-card-item {
+  font-family: "OpenSans-Bold", sans-serif;
+  font-size: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #ff8b38;
+  padding: 14px;
+}
+
+.features {
   text-align: center;
   background-color: #fff;
   font-family: "OpenSans-Regular", sans-serif;
   font-size: 12px;
-  height: 40px;
+  font-weight: 300;
   color: #c3c3c5;
   text-transform: uppercase;
 }
-.table th {
-  background-color: #333;
-  color: #fff;
-  height: 59px;
-}
-.table .first {
-  background-color: #333;
-  color: #fff;
-  height: 100px;
-  text-align: center;
-  font-family: "Raleway-Bold", sans-serif;
-  font-size: 33px;
-}
-.table .first .zero {
-  font-size: 57px;
-}
-.table .first .seven {
-  font-size: 67px;
-}
-.table .first .nine {
-  font-size: 69px;
-}
-.table .first .one {
-  font-size: 54px;
-}
-.table .second {
-  background-color: #333;
-  color: #999;
-  height: 51px;
-  font-family: "OpenSans_SemiBold", sans-serif;
-  font-size: 11px;
-  font-style: italic;
-  text-transform: inherit;
-}
-.table .orange {
-  background: #ff8b38;
-  height: 6px;
-}
-.table .middle {
-  background: #ff8b38;
-  height: 40px;
-  font-family: "OpenSans-Bold", sans-serif;
-  font-size: 11px;
-  text-transform: uppercase;
-  color: #fff;
-}
-.table .table-middle {
-  margin: 0 40px;
+.features .features-item {
+  border-bottom: 1px solid #f5f5f5;
+  padding: 14px 0;
 }
 
 .reviews {
