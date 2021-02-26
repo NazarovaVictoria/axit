@@ -1,5 +1,6 @@
 @import "./fonts.css";
 @import "./reset.css";
+@import "./settings.css";
 
 // color
 $cw:#fff;
@@ -63,7 +64,7 @@ header .wrapper {
 		font-family: "OpenSans-SemiBold", sans-serif;
 		text-transform: capitalize;
 		font-size: 12px;
-		text-decoration: none;
+		
 	}
 }
 .wr-intro {
@@ -97,23 +98,26 @@ header .wrapper {
 			font-weight: 400;
 			color: $cw;
 			text-transform: uppercase;
-			line-height: 43px;
+			line-height: 1.45;
 			margin-bottom: 30px;
-			// &::after {
-			// 	content:"";
-			// 	display: block;
-			// 	width: 50px;
-			// 	height: 2px;
-			// 	background-color: $cw;
-			// 	margin: 30px 0;
-			// }
+			position: relative;
+			&::before {
+				content:"";
+				display: block;
+				width: 50px;
+				height: 2px;
+				background-color: $cw;
+				position: absolute;
+				bottom: -13px;
+				left: 0;
+			}
 		}
 		p {
 			font-family: "Raleway-Light", sans-serif;
 			font-size: 13px;
 			color: #989793;
 			margin-bottom: 45px;
-			line-height: 20px;
+			line-height: 1.5;
 		}
 		a {
 			font-family: "OpenSans_SemiBold", sans-serif;
@@ -153,11 +157,11 @@ header .wrapper {
 		flex-direction: column;
 		align-items: center;
 		position: relative;
-		margin-bottom: 40px;
+		padding-bottom: 40px;
 }
 .form-input {
 	width: 80%;
-	padding: 40px 0 10px 0;
+	margin: 40px 0 10px 0;
 	font-family: "OpenSans-Regular", sans-serif;
 	border: none;
 	border-bottom: 1px solid #d6d6d6;
@@ -181,9 +185,9 @@ header .wrapper {
 		}
 }
 .submit {
-	opacity: 0;
+	// opacity: 0;
 }
-.get {
+.submit {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -191,7 +195,7 @@ header .wrapper {
 	font-size: 14px;
 	cursor: pointer;
 	background: $orange;
-	padding: 20px;
+	padding: 20px 128px;
 	color: $cw;
 	transition: all .3s;
 	&:hover {
@@ -213,23 +217,32 @@ header .wrapper {
 	h4 {
 		font-family: "OpenSans-Bold", sans-serif;
 		font-size: 20px;
-		padding-bottom: 5px;
+		margin-bottom: 5px;
 	}
 	p {
 	font-family: "OpenSans-Regular", sans-serif;
 	font-size: 12px;
 	color: #b4b4b7;
-	padding: 5px 0;
+	line-height: 1.5;
 	}
 }
 .sm-icons {
 	display: flex;
-	
+	& a {
+		margin-left: 35px;
+		margin-right: 35px;
+		&:first-child {
+			margin-left: 85px;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
 	& svg {
 		height: 45px;
 		color: $cw-10;
-		margin-left: 35px;
-		margin-right: 35px;
+		// margin-left: 35px;
+		// margin-right: 35px;
 		transition: all .3s;
 		&.fa-facebook-f:hover {
 			color: #3d5998;
@@ -261,10 +274,10 @@ header .wrapper {
 	}
 }
 .sm-icons .fa-facebook-f {
-	margin-left: 65px;
+	// margin-left: 65px;
 }
 .sm-icons .fa-rss {
-	margin-right: 0;
+	// margin-right: 0;
 }
 .slider {
 	background: $cf5; 
@@ -273,17 +286,17 @@ header .wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 150px;
-	margin-bottom: 115px;
+	padding-top: 150px;
+	padding-bottom: 115px;
 	h3 {
 		font-family: "OpenSans-Bold", sans-serif;
 		font-size: 16px;
-		padding-bottom: 50px;
+		margin-bottom: 50px;
 	}
 	p {
 		font-family: "OpenSans-Regular", sans-serif;
 		font-size: 12px;
-		line-height: 20px;
+		line-height: 1.6;
 		color: $grey;
 		padding-bottom: 13px;
 	}
@@ -323,38 +336,43 @@ header .wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 110px;
-	margin-bottom: 140px;
+	padding-top: 110px;
+	padding-bottom: 140px;
 }
 .img {
-	max-width: 455px;
-	// width: 41.36%;
+	width: 42%;
 }
 
 .sub-list-section {
-	width: 41.36%;
+	width: 42%;
 	p {
 		font-family: "OpenSans-Regular", sans-serif;
 		font-size: 12px;
-		line-height: 20px;
+		line-height: 1.6;
 		color: $grey;
 	}
 }
 .sub-list-title {
-	& .title-decor {
-	width: 50px;
-	height: 2px;
-	background-color: $orange;
-	}
 	h3 {
 	font-family: "OpenSans-Bold", sans-serif;
 	font-size: 16px;
-	margin-bottom: 30px;
+	margin-bottom: 60px;
+	position: relative;
+	&::before {
+		content: "";
+		display: block;
+		width: 64px;
+		height: 2px;
+		background-color: $orange;
+		position: absolute;
+		bottom: -33px;
+		left: 0;
+	}
 	}
 	p {
 	font-family: "OpenSans-Regular", sans-serif;
 	font-size: 12px;
-	line-height: 20px;
+	line-height: 1.6;
 	color: $grey;
 	margin-top: 30px;
 	}
@@ -394,29 +412,33 @@ header .wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 90px;
-	margin-bottom: 130px;
+	padding-top: 90px;
+	padding-bottom: 130px;
 }
 .standart-text {
 	// max-width: 480px;
-	width: 41.36%;
+	width: 42%;
 	h3 {
 		font-family: "OpenSans-Bold", sans-serif;
 		font-style: 16px;
-		 &::after {
-		 	content: "";
-		 	display: block;
-		 	width: 65px;
-		 	height: 2px;
-		 	background-color: $orange;
-		 	margin: 30px 0;
-		 }
+		margin-bottom: 60px;
+		position: relative;
+		&::before {
+			content: "";
+			display: block;
+			width: 64px;
+			height: 2px;
+			background-color: $orange;
+			position: absolute;
+			bottom: -33px;
+			left: 0;
+		}
 	}
 	p {
 		font-family: "OpenSans-Regular", sans-serif;
 		font-size: 12px;
 		color: $grey;
-		line-height: 20px;
+		line-height: 1.6;
 	}
 }
 .card-group {
@@ -438,6 +460,17 @@ header .wrapper {
 		font-size: 30px;
 		font-weight: 400;
 		margin: 105px 0 30px 0;
+		// position: relative;
+		// &::before {
+		// 	content: "";
+		// 	display: block;
+		// 	width: 64px;
+		// 	height: 2px;
+		// 	background-color: $orange;
+		// 	position: absolute;
+		// 	bottom: -33px;
+		// 	left: 0;
+		// }
 		
 	}
 	p {
@@ -449,7 +482,7 @@ header .wrapper {
 }
 .card-group-wrapper {
 	display: flex;
-	margin-bottom: 105px;
+	padding-bottom: 105px;
 }
 .card {
 	display: flex;
@@ -465,8 +498,8 @@ header .wrapper {
 			font-family: "OpenSans-Regular", sans-serif;
 			font-size: 12px;
 			color: $grey;
-			padding-top: 30px;
-			line-height: 20px;
+			margin-top: 30px;
+			line-height: 1.6;
 		}
 		&:nth-child(2) {
 			padding: 0 30px 0 30px;
@@ -496,7 +529,7 @@ header .wrapper {
 	background: $cf5;
 }
 .pricing-wrapper {
-	margin-bottom: 96px;
+	padding-bottom: 96px;
 }
 .pricing-card {
 	// width: 33.333%;
@@ -578,14 +611,14 @@ header .wrapper {
 }
 .customer-wrapper {
 	display: flex;
-	margin-top: 55px;
-	margin-bottom: 100px;
+	padding-top: 55px;
+	padding-bottom: 100px;
 }
 .customer-reviews {
 	& .customer {
 		font-family: "OpenSans-Regular", sans-serif;
 		font-size: 12px;
-		line-height: 20px;
+		line-height: 1.6;
 		color: #949598;
 		background-color: #f5f5f5;
 		padding: 25px 12px;
@@ -706,8 +739,8 @@ header .wrapper {
 	display: flex;
 }
 .form-btn {
-	margin-top: 60px;
-	margin-bottom: 105px;
+	padding-top: 60px;
+	padding-bottom: 105px;
 }
 .contact {
 	background: $cw;
