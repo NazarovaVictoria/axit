@@ -169,19 +169,6 @@ header .wrapper {
   border-bottom: 1px solid #1a73a8;
 }
 
-.form-label {
-  display: flex;
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  transition: 0.3s;
-  cursor: pointer;
-  margin: 40px;
-}
-.form-label:last-child {
-  margin-bottom: 55px;
-}
-
 .submit {
   display: flex;
   justify-content: center;
