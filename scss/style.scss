@@ -11,6 +11,14 @@ $grey-10: #333;
 $orange: #ff8b38;
 $orange-10: #ee802f;
 $black: #000;
+// fonts
+$OpS-Reg: "OpenSans-Regular", sans-serif;
+$OpS-SemiB: "OpenSans-SemiBold", sans-serif;
+$OpS-Bold: "OpenSans-Bold", sans-serif;
+$Rel-Reg: "Raleway-Regular", sans-serif;
+$Rel-Light: "Raleway-Light", sans-serif;
+$Rel-Bold: "Raleway-Bold", sans-serif;
+$Mpro-Reg: "Myrialpro", sans-serif;
 .intro {
 	background-image: url("../img/wr-intro/background.jpg");
 	background-size: cover;
@@ -38,7 +46,7 @@ header .wrapper {
 	line-height: 1;
 }
 .logo {
-	font-family: "Myrialpro", sans-serif;
+	font-family: $Mpro-Reg;
 	font-weight: 600;
 	font-size: 30px;
 	color: $cw;
@@ -61,7 +69,7 @@ header .wrapper {
 	a {
 		letter-spacing: 1px;
 		color: $cw;
-		font-family: "OpenSans-SemiBold", sans-serif;
+		font-family: $OpS-SemiB;
 		text-transform: capitalize;
 		font-size: 12px;
 		
@@ -78,7 +86,7 @@ header .wrapper {
 }
 .axit-title {
 		& .axit-title-title {
-			font-family: "Raleway-Regular", sans-serif;
+			font-family: $OpS-Reg;
 			font-size: 60px;
 			color: $cw;
 			text-transform: uppercase;
@@ -93,7 +101,7 @@ header .wrapper {
 			color: $orange;
 		}
 		h1 {
-			font-family: "Raleway-Regular", sans-serif;
+			font-family: $Rel-Reg;
 			font-size: 30px;
 			font-weight: 400;
 			color: $cw;
@@ -113,14 +121,14 @@ header .wrapper {
 			}
 		}
 		p {
-			font-family: "Raleway-Light", sans-serif;
+			font-family: $Rel-Light;
 			font-size: 13px;
 			color: #989793;
 			margin-bottom: 45px;
 			line-height: 1.5;
 		}
 		a {
-			font-family: "OpenSans_SemiBold", sans-serif;
+			font-family: $OpS-SemiB;
 			font-size : 13px;
 			text-transform: capitalize;
 			color: $cw;
@@ -137,7 +145,7 @@ header .wrapper {
 .form-title {
 	text-align: center;
 		p {
-		font-family: "OpenSans-Bold", sans-serif;
+		font-family: $OpS-Bold;
 		font-size: 18px;
 		color: $grey-10;
 		background-color: $cf5;
@@ -151,7 +159,7 @@ header .wrapper {
 		}
 }
 .form-group {
-	  font-family: "OpenSans-Regular", sans-serif;
+	  font-family: $OpS-Reg;
 		font-size: 12px;
 		display: flex;
 		flex-direction: column;
@@ -162,7 +170,7 @@ header .wrapper {
 .form-input {
 	width: 80%;
 	margin: 40px 0 10px 0;
-	font-family: "OpenSans-Regular", sans-serif;
+	font-family: $OpS-Reg;
 	color: #d6d6d6;
 	border: none;
 	border-bottom: 1px solid #d6d6d6;
@@ -178,7 +186,7 @@ header .wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-family: "OpenSans_SemiBold", sans-serif;
+	font-family: $OpS-SemiB;
 	font-size: 14px;
 	cursor: pointer;
 	background: $orange;
@@ -202,12 +210,12 @@ header .wrapper {
 }
 .sm-block {
 	h4 {
-		font-family: "OpenSans-Bold", sans-serif;
+		font-family: $OpS-Bold;
 		font-size: 20px;
 		margin-bottom: 5px;
 	}
 	p {
-	font-family: "OpenSans-Regular", sans-serif;
+	font-family: $OpS-Reg;
 	font-size: 12px;
 	color: #b4b4b7;
 	line-height: 1.5;
@@ -268,18 +276,20 @@ header .wrapper {
 	padding-top: 150px;
 	padding-bottom: 115px;
 	h3 {
-		font-family: "OpenSans-Bold", sans-serif;
+		font-family: $OpS-Bold;
 		font-size: 16px;
 		margin-bottom: 50px;
 	}
 	p {
-		font-family: "OpenSans-Regular", sans-serif;
+		font-family: $OpS-Reg;
 		font-size: 12px;
 		line-height: 1.6;
 		color: $grey;
 		padding-bottom: 13px;
 	}
-	
+	img {
+		max-width: 320px;
+	}
 }
 .tabs-image {
 	width: 110px;
@@ -311,7 +321,7 @@ header .wrapper {
 	margin-left: 100px;
 	margin-right: 100px;
 	& a {
-		font-family: "OpenSans_SemiBold", sans-serif;
+		font-family: $OpS-SemiB;
 		font-size: 12px;
 		text-decoration: none;
 		cursor: pointer;
@@ -349,7 +359,7 @@ header .wrapper {
 .sub-list-section {
 	width: 42%;
 	p {
-		font-family: "OpenSans-Regular", sans-serif;
+		font-family: $OpS-Reg;
 		font-size: 12px;
 		line-height: 1.6;
 		color: $grey;
@@ -357,7 +367,7 @@ header .wrapper {
 }
 .sub-list-title {
 	h3 {
-	font-family: "OpenSans-Bold", sans-serif;
+	font-family: $OpS-Bold;
 	font-size: 16px;
 	margin-bottom: 60px;
 	position: relative;
@@ -373,7 +383,7 @@ header .wrapper {
 	}
 	}
 	p {
-	font-family: "OpenSans-Regular", sans-serif;
+	font-family: $OpS-Reg;
 	font-size: 12px;
 	line-height: 1.6;
 	color: $grey;
@@ -422,7 +432,7 @@ header .wrapper {
 	// max-width: 480px;
 	width: 42%;
 	h3 {
-		font-family: "OpenSans-Bold", sans-serif;
+		font-family: $OpS-Bold;
 		font-style: 16px;
 		margin-bottom: 60px;
 		position: relative;
@@ -438,7 +448,7 @@ header .wrapper {
 		}
 	}
 	p {
-		font-family: "OpenSans-Regular", sans-serif;
+		font-family: $OpS-Reg;
 		font-size: 12px;
 		color: $grey;
 		line-height: 1.6;
@@ -458,7 +468,7 @@ header .wrapper {
 		background-color: $orange;
 	}
 	h2 {
-		font-family: "Raleway-Regular", sans-serif;
+		font-family: $Rel-Reg;
 		text-transform: uppercase;
 		font-size: 30px;
 		font-weight: 400;
@@ -477,7 +487,7 @@ header .wrapper {
 		
 	}
 	p {
-		font-family: "OpenSans-Regular", sans-serif;
+		font-family: $OpS-Reg;
 		font-size: 12px;
 		color: $grey;
 		margin-top: 30px;
@@ -494,12 +504,12 @@ header .wrapper {
 	align-items: center;
 	text-align: center;
 		h3 {
-			font-family: "OpenSans-Bold", sans-serif;
+			font-family: $OpS-Bold;
 			font-size: 17px;
 			margin: 0;
 		}
 		p {
-			font-family: "OpenSans-Regular", sans-serif;
+			font-family: $OpS-Reg;
 			font-size: 12px;
 			color: $grey;
 			margin-top: 30px;
@@ -551,7 +561,7 @@ header .wrapper {
 .pricing-card-body {
 	text-align: center;
 	& .pricing-card-caption {
-		font-family: "OpenSans-Bold", sans-serif;
+		font-family: $OpS-Bold;
 		font-size: 16px;
 		color: $cw;
 		background-color: #333;
@@ -559,8 +569,7 @@ header .wrapper {
 		border-bottom: 2px solid $cw;
 	}
 	& .price {
-		font-family: "Raleway-Bold",
-		sans-serif;
+		font-family: $Rel-Bold;
 		font-size: 33px;
 		color: $cw;
 		background-color: #333;
@@ -578,7 +587,7 @@ header .wrapper {
 		}
 	}
 	p {
-		font-family: "OpenSans_SemiBold", sans-serif;
+		font-family: $OpS-SemiB;
 		font-size: 11px;
 		color: #999;
 		font-style: italic;
@@ -588,7 +597,7 @@ header .wrapper {
 		border-bottom: 5px solid $orange;
 	}
 	& .pricing-card-item {
-		font-family: "OpenSans-Bold", sans-serif;
+		font-family: $OpS-Bold;
 		font-size: 10px;
 		color: $cw;
 		text-transform: uppercase;
@@ -599,7 +608,7 @@ header .wrapper {
 .features {
 	text-align: center;
 	background-color: $cw;
-	font-family: "OpenSans-Regular", sans-serif;
+	font-family: $OpS-Reg;
 	font-size: 12px;
 	font-weight: 300;
 	color: #c3c3c5;
@@ -620,7 +629,7 @@ header .wrapper {
 }
 .customer-reviews {
 	& .customer {
-		font-family: "OpenSans-Regular", sans-serif;
+		font-family: $OpS-Reg;
 		font-size: 12px;
 		line-height: 1.6;
 		color: #949598;
@@ -655,12 +664,12 @@ header .wrapper {
 	}
 	
 	& .name {
-		font-family: "OpenSans-Bold", sans-serif;
+		font-family: $OpS-Bold;
 		font-size: 20px;
 		padding-bottom: 10px;
 	}
 	& .profession {
-		font-family: "OpenSans-Regular", sans-serif;
+		font-family: $OpS-Reg;
 		font-size: 12px;
 		color: #a4a5a8;
 	}
@@ -686,7 +695,7 @@ header .wrapper {
 	flex-direction: column;
 	align-items: center;
 	h2 {
-		font-family: "Raleway-Regular", sans-serif;
+		font-family: $Rel-Reg;
 		text-transform: uppercase;
 		font-size: 30px;
 		font-weight: 400;
@@ -702,13 +711,13 @@ header .wrapper {
 		}
 	}
 	p {
-		font-family: "Raleway-Light", sans-serif;
+		font-family: $Rel-Light;
 		font-size: 12px;
 		color: #9c9992;
 		margin: 0;
 	}
 	a {
-		font-family: "OpenSans_SemiBold", sans-serif;
+		font-family: $OpS-SemiB;
 		font-size: 13px;
 		text-transform: capitalize;
 		color: $cw;
@@ -729,8 +738,7 @@ display: flex;
 	text-align:center;
 	margin-top: 50px;
 	& a {
-		font-family: "OpenSans_SemiBold",
-			sans-serif;
+		font-family: $OpS-SemiB;
 		font-size: 12px;
 		text-decoration: none;
 		cursor: pointer;
@@ -788,7 +796,7 @@ display: flex;
 		margin: 0 15px;
 	}
 	p {
-		font-family: "OpenSans-Regular",sans-serif;
+		font-family: $OpS-Reg;
 		font-size: 10px;
 		color: #585858;
 		text-align: center;

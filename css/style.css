@@ -71,7 +71,7 @@ header .wrapper {
 }
 
 .axit-title .axit-title-title {
-  font-family: "Raleway-Regular", sans-serif;
+  font-family: "OpenSans-Regular", sans-serif;
   font-size: 60px;
   color: #fff;
   text-transform: uppercase;
@@ -113,7 +113,7 @@ header .wrapper {
   line-height: 1.5;
 }
 .axit-title a {
-  font-family: "OpenSans_SemiBold", sans-serif;
+  font-family: "OpenSans-SemiBold", sans-serif;
   font-size: 13px;
   text-transform: capitalize;
   color: #fff;
@@ -175,7 +175,7 @@ header .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "OpenSans_SemiBold", sans-serif;
+  font-family: "OpenSans-SemiBold", sans-serif;
   font-size: 14px;
   cursor: pointer;
   background: #ff8b38;
@@ -274,6 +274,9 @@ header .wrapper {
   color: #a2a3ab;
   padding-bottom: 13px;
 }
+.tabs-wrapper img {
+  max-width: 320px;
+}
 
 .tabs-image {
   width: 110px;
@@ -307,7 +310,7 @@ header .wrapper {
   margin-right: 100px;
 }
 .tabs-text a {
-  font-family: "OpenSans_SemiBold", sans-serif;
+  font-family: "OpenSans-SemiBold", sans-serif;
   font-size: 12px;
   text-decoration: none;
   cursor: pointer;
@@ -581,7 +584,7 @@ header .wrapper {
   font-size: 54px;
 }
 .pricing-card-body p {
-  font-family: "OpenSans_SemiBold", sans-serif;
+  font-family: "OpenSans-SemiBold", sans-serif;
   font-size: 11px;
   color: #999;
   font-style: italic;
@@ -716,7 +719,7 @@ header .wrapper {
   margin: 0;
 }
 .design-group-title a {
-  font-family: "OpenSans_SemiBold", sans-serif;
+  font-family: "OpenSans-SemiBold", sans-serif;
   font-size: 13px;
   text-transform: capitalize;
   color: #fff;
@@ -739,7 +742,7 @@ header .wrapper {
   margin-top: 50px;
 }
 .contact-btn a {
-  font-family: "OpenSans_SemiBold", sans-serif;
+  font-family: "OpenSans-SemiBold", sans-serif;
   font-size: 12px;
   text-decoration: none;
   cursor: pointer;
