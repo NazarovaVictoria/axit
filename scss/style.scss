@@ -132,7 +132,7 @@ header .wrapper {
 }
 .form-header {
 	background-color: $cw;
-	width: 360px;
+	max-width: 360px;
 }
 .form-title {
 	text-align: center;
@@ -163,29 +163,16 @@ header .wrapper {
 	width: 80%;
 	margin: 40px 0 10px 0;
 	font-family: "OpenSans-Regular", sans-serif;
+	color: #d6d6d6;
 	border: none;
 	border-bottom: 1px solid #d6d6d6;
 	background-color: transparent;
+	padding-bottom: 10px;
 	outline: none;
 	transition :0.3s;
 	&:focus {
 		border-bottom: 1px solid #1a73a8;
 	}
-}
-// .form-label {
-// 	display: flex;
-// 	position: absolute;
-// 	top: 0;
-// 	z-index: -1;
-// 	transition :0.3s;
-// 	cursor: pointer;
-// 	margin: 40px;
-// 		&:last-child {
-// 			margin-bottom: 55px;
-// 		}
-// }
-.submit {
-	// opacity: 0;
 }
 .submit {
 	display: flex;
@@ -241,8 +228,6 @@ header .wrapper {
 	& svg {
 		height: 45px;
 		color: $cw-10;
-		// margin-left: 35px;
-		// margin-right: 35px;
 		transition: all .3s;
 		&.fa-facebook-f:hover {
 			color: #3d5998;
@@ -273,16 +258,10 @@ header .wrapper {
 		}
 	}
 }
-.sm-icons .fa-facebook-f {
-	// margin-left: 65px;
-}
-.sm-icons .fa-rss {
-	// margin-right: 0;
-}
-.slider {
+.tabs {
 	background: $cf5; 
 }
-.slider-wrapper {
+.tabs-wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -300,7 +279,38 @@ header .wrapper {
 		color: $grey;
 		padding-bottom: 13px;
 	}
-	a {
+	
+}
+.tabs-image {
+	width: 110px;
+	position: relative;
+	& span {
+		color: #fff;
+		text-transform: uppercase;
+	}
+	& .tab1 {
+		position: absolute;
+		top: 17%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	& .tab2 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	& .tab3 {
+		position: absolute;
+		top: 82%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+.tabs-text {
+	margin-left: 100px;
+	margin-right: 100px;
+	& a {
 		font-family: "OpenSans_SemiBold", sans-serif;
 		font-size: 12px;
 		text-decoration: none;
@@ -313,21 +323,14 @@ header .wrapper {
 		margin-top: 50px;
 	}
 }
-.slick-slide {
-	float: none;
+.b-tab {
+	display: none;
 }
-.slick-list {
-	height: 600px;
-}
-.slick-track {
+.b-tab.active {
 	display: block;
 }
-.slider-item {
-	height: 110px;
-}
-.slider-text {
-	margin-left: 100px;
-	margin-right: 100px;
+.b-nav-tab.active {
+	color: #ff4200;
 }
 .sub-list {
 	background: $cw;
@@ -483,6 +486,7 @@ header .wrapper {
 .card-group-wrapper {
 	display: flex;
 	padding-bottom: 105px;
+	padding-top: 80px;
 }
 .card {
 	display: flex;
@@ -519,7 +523,7 @@ header .wrapper {
 	justify-content: center;
 	align-items: center;
 	transition: all .3s;
-	margin: 80px 0 30px 0;
+	margin-bottom: 30px;
 	&:hover {
 		cursor: pointer;
 		background: rgba(247, 153, 85, .3);
@@ -719,14 +723,15 @@ header .wrapper {
 	}
 }
 .form-footer {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	&.form-input {
-		display: flex;
-	}
-	a {
+display: flex;
+}
+.contact-btn {
+	text-align:center;
+	margin-top: 50px;
+	& a {
+		font-family: "OpenSans_SemiBold",
+			sans-serif;
+		font-size: 12px;
 		text-decoration: none;
 		cursor: pointer;
 		background: $orange;
@@ -735,12 +740,25 @@ header .wrapper {
 		border-radius: 3px;
 	}
 }
+
 .form-wrapper {
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
 }
+.form-group-left {
+	width: 530px;
+	flex: 0 1 50%;
+}
+.form-group-right {
+	width: 530px;
+	flex: 0 1 50%;
+}
+
 .form-btn {
 	padding-top: 60px;
-	padding-bottom: 105px;
+	
 }
 .contact {
 	background: $cw;
@@ -751,6 +769,7 @@ header .wrapper {
 
 .footer {
 	background-color: $black;
+	margin-top: 80px;
 }
 .footer-row {
 	display: flex;
@@ -762,9 +781,11 @@ header .wrapper {
 	
 }
 .footer-icons {
-	
-	img {
-		padding: 20px 15px 0 15px;
+	padding-top: 15px;
+	& svg {
+		height: 24px;
+		color: #ccc;
+		margin: 0 15px;
 	}
 	p {
 		font-family: "OpenSans-Regular",sans-serif;
