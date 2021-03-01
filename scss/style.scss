@@ -19,6 +19,11 @@ $Rel-Reg: "Raleway-Regular", sans-serif;
 $Rel-Light: "Raleway-Light", sans-serif;
 $Rel-Bold: "Raleway-Bold", sans-serif;
 $Mpro-Reg: "Myrialpro", sans-serif;
+// size
+$fs-xm: 10px;
+$fs-sm: 12px;
+$fs-s: 16px;
+$fs-m: 20px;
 .intro {
 	background-image: url("../img/wr-intro/background.jpg");
 	background-size: cover;
@@ -34,6 +39,7 @@ $Mpro-Reg: "Myrialpro", sans-serif;
 	padding-right: 15px;
 	box-sizing: border-box;
 	font-weight: 600;
+	
 }
 header {
 	padding: 20px 0;
@@ -55,6 +61,12 @@ header .wrapper {
 	text-decoration: none;
 	span {
 		color: $orange;
+		&:hover {
+			color: $cw;
+		}
+	}
+	&:hover {
+		color: $orange;
 	}
 }
 .nav {
@@ -71,13 +83,16 @@ header .wrapper {
 		color: $cw;
 		font-family: $OpS-SemiB;
 		text-transform: capitalize;
-		font-size: 12px;
-		
+		font-size: $fs-sm;
+		&:hover {
+			color: $orange;
+		}
 	}
 }
 .wr-intro {
 	display: flex;
 	justify-content: space-around;
+	overflow: hidden;
 }
 .axit-title-form {
 	display: flex;
@@ -136,6 +151,10 @@ header .wrapper {
 			border-radius: 2px;
 			padding: 13px 30px;
 			text-decoration: none;
+			&:hover {
+				color: $orange-10;
+				background-color: $cw;
+			}
 		}		
 }
 .form-header {
@@ -160,7 +179,7 @@ header .wrapper {
 }
 .form-group {
 	  font-family: $OpS-Reg;
-		font-size: 12px;
+		font-size: $fs-sm;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -216,7 +235,7 @@ header .wrapper {
 	}
 	p {
 	font-family: $OpS-Reg;
-	font-size: 12px;
+	font-size: $fs-sm;
 	color: #b4b4b7;
 	line-height: 1.5;
 	}
@@ -282,7 +301,7 @@ header .wrapper {
 	}
 	p {
 		font-family: $OpS-Reg;
-		font-size: 12px;
+		font-size: $fs-sm;
 		line-height: 1.6;
 		color: $grey;
 		padding-bottom: 13px;
@@ -291,10 +310,12 @@ header .wrapper {
 		max-width: 320px;
 	}
 }
-.tabs-image {
+.tabs-container {
 	width: 110px;
 	position: relative;
 	& span {
+		font-family: $OpS-Bold;
+		font-size: $fs-sm;
 		color: #fff;
 		text-transform: uppercase;
 	}
@@ -317,12 +338,21 @@ header .wrapper {
 		transform: translate(-50%, -50%);
 	}
 }
+.tabs-item {
+	background-color: $black;
+	width: 110px;
+	height: 110px;
+	border: 1px solid #c7c7c7;
+	&:hover {
+		background-color: #ff8b38;
+	}
+}
 .tabs-text {
 	margin-left: 100px;
 	margin-right: 100px;
 	& a {
 		font-family: $OpS-SemiB;
-		font-size: 12px;
+		font-size: $fs-sm;
 		text-decoration: none;
 		cursor: pointer;
 		background: $orange;
@@ -331,6 +361,10 @@ header .wrapper {
 		border-radius: 3px;
 		display: inline-block;
 		margin-top: 50px;
+		&:hover {
+			background-color: $grey-10;
+			color: $orange;
+		}
 	}
 }
 .b-tab {
@@ -353,14 +387,16 @@ header .wrapper {
 	padding-bottom: 140px;
 }
 .img {
-	width: 42%;
+	max-width: 454px;
+	height: auto;
+	overflow: hidden;
 }
 
 .sub-list-section {
 	width: 42%;
 	p {
 		font-family: $OpS-Reg;
-		font-size: 12px;
+		font-size: $fs-sm;
 		line-height: 1.6;
 		color: $grey;
 	}
@@ -384,7 +420,7 @@ header .wrapper {
 	}
 	p {
 	font-family: $OpS-Reg;
-	font-size: 12px;
+	font-size: $fs-sm;
 	line-height: 1.6;
 	color: $grey;
 	margin-top: 30px;
@@ -433,7 +469,7 @@ header .wrapper {
 	width: 42%;
 	h3 {
 		font-family: $OpS-Bold;
-		font-style: 16px;
+		font-size: 16px;
 		margin-bottom: 60px;
 		position: relative;
 		&::before {
@@ -449,7 +485,7 @@ header .wrapper {
 	}
 	p {
 		font-family: $OpS-Reg;
-		font-size: 12px;
+		font-size: $fs-sm;
 		color: $grey;
 		line-height: 1.6;
 	}
@@ -472,7 +508,8 @@ header .wrapper {
 		text-transform: uppercase;
 		font-size: 30px;
 		font-weight: 400;
-		margin: 105px 0 30px 0;
+		padding-top: 105px;
+		margin-bottom: 30px;
 		// position: relative;
 		// &::before {
 		// 	content: "";
@@ -488,7 +525,7 @@ header .wrapper {
 	}
 	p {
 		font-family: $OpS-Reg;
-		font-size: 12px;
+		font-size: $fs-sm;
 		color: $grey;
 		margin-top: 30px;
 	}
@@ -510,7 +547,7 @@ header .wrapper {
 		}
 		p {
 			font-family: $OpS-Reg;
-			font-size: 12px;
+			font-size: $fs-sm;
 			color: $grey;
 			margin-top: 30px;
 			line-height: 1.6;
@@ -544,10 +581,12 @@ header .wrapper {
 }
 .pricing-wrapper {
 	padding-bottom: 96px;
+	overflow: hidden;
 }
 .pricing-card {
 	// width: 33.333%;
-	min-width: 343px;
+	width: 343px;
+	
 	&:nth-child(2) {
 		margin: 0 40px 0 40px;
 	}
@@ -560,7 +599,7 @@ header .wrapper {
 }
 .pricing-card-body {
 	text-align: center;
-	& .pricing-card-caption {
+	& .pricing-card-caption p {
 		font-family: $OpS-Bold;
 		font-size: 16px;
 		color: $cw;
@@ -609,7 +648,7 @@ header .wrapper {
 	text-align: center;
 	background-color: $cw;
 	font-family: $OpS-Reg;
-	font-size: 12px;
+	font-size: $fs-sm;
 	font-weight: 300;
 	color: #c3c3c5;
 	text-transform: uppercase;
@@ -630,7 +669,7 @@ header .wrapper {
 .customer-reviews {
 	& .customer {
 		font-family: $OpS-Reg;
-		font-size: 12px;
+		font-size: $fs-sm;
 		line-height: 1.6;
 		color: #949598;
 		background-color: #f5f5f5;
@@ -653,7 +692,7 @@ header .wrapper {
 }
 .customer-name {
 	display: flex;
-	padding-top: 20px;
+	margin-top: 20px;
 	&::before {
 		content: "";
 		vertical-align: top;
@@ -670,7 +709,7 @@ header .wrapper {
 	}
 	& .profession {
 		font-family: $OpS-Reg;
-		font-size: 12px;
+		font-size: $fs-sm;
 		color: #a4a5a8;
 	}
 	 img {
@@ -680,8 +719,8 @@ header .wrapper {
 }
 .block-name {
 	flex-direction: column;
-	padding-left: 15px;
-	margin-top: 15px;
+	margin-left: 15px;
+	padding-top: 15px;
 }
 .design {
 	background-image: url("../img/design/street.jpg");
@@ -694,27 +733,34 @@ header .wrapper {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-bottom: 63px;
 	h2 {
 		font-family: $Rel-Reg;
 		text-transform: uppercase;
 		font-size: 30px;
 		font-weight: 400;
-		margin: 74px 0 0 0;
+		padding-top: 75px;
+		margin-bottom: 70px;
 		color: $cw;
+		position: relative;
 		&::after {
 			content: "";
 			display: block;
 			width: 65px;
 			height: 2px;
 			background-color: $cw;
-			margin: 30px auto;
+			// margin: 30px auto;
+			position: absolute;
+			top: 130%;
+			left: 50%;
+			transform: translate(-50%, -50%);
 		}
 	}
 	p {
 		font-family: $Rel-Light;
-		font-size: 12px;
+		font-size: $fs-sm;
 		color: #9c9992;
-		margin: 0;
+		margin-bottom: 33px;
 	}
 	a {
 		font-family: $OpS-SemiB;
@@ -724,8 +770,8 @@ header .wrapper {
 		border: 2px solid $cw;
 		padding: 13px 30px;
 		text-decoration: none;
-		margin-top: 33px;
-		margin-bottom: 63px;
+		// margin-top: 33px;
+		// margin-bottom: 63px;
 		&:hover {
 			color: $orange-10;
 		}
@@ -739,13 +785,17 @@ display: flex;
 	margin-top: 50px;
 	& a {
 		font-family: $OpS-SemiB;
-		font-size: 12px;
+		font-size: $fs-sm;
 		text-decoration: none;
 		cursor: pointer;
 		background: $orange;
 		padding: 16px 24px;
 		color: $cw;
 		border-radius: 3px;
+		&:hover {
+			background-color: $grey-10;
+			color: $orange;
+		}
 	}
 }
 
@@ -804,4 +854,32 @@ display: flex;
 		margin: 0;
 	}
 }
+@import "./responsive.css";
+@media(max-width:1200px) {
+	
+	
+}
+@media(max-width:969px) {
+	
 
+	.title-block-heading {
+      //   padding-left: 20px;
+	}
+	.sub-list-wrapper {
+		// display: flex;
+		// justify-content: center;
+		// align-items: center;
+	}
+	.sub-list-section {
+		// padding-left: 50px;
+	}
+}
+@media(max-width:767px) {
+	
+	
+}
+@media(max-width:576px) {
+	.wrapper {
+		max-width: none;
+	}
+}

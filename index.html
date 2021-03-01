@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head> 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -121,17 +121,12 @@
 		<section class="tabs">
 			<div class="wrapper">
 				<div class="tabs-wrapper">
-					<div class="tabs-image">
-						<a href="#orange" data-tab="orange" class="b-nav-tab active">
-							<img src="./img/slider/tab_1.png" alt="">
-							<span class="tab1">tab 1</span>
-						</a>
-						<a href="#green" data-tab="green" class="b-nav-tab">
-							<img src="./img/slider/tab_2.png" alt=""><span class="tab2">tab 2</span>
-						</a>
-						<a href="#blue" data-tab="blue" class="b-nav-tab">
-							<img src="./img/slider/tab_3.png" alt=""><span class="tab3">tab 3</span>
-						</a>
+					<div class="tabs-container">
+						<ul tabs-list>
+							<li class="tabs-item"><button class="b-nav-tab active" data-tab="orange"><span class="tab1">tab 1</span></button></li>
+							<li class="tabs-item"><button class="b-nav-tab" data-tab="green"><span class="tab2">tab 2</span></button></li>
+							<li class="tabs-item"><button class="b-nav-tab" data-tab="blue"><span class="tab3">tab 3</span></button></li>
+						</ul>
 					</div>
 					<div class="tabs-text b-tab active" id="orange">
 						<h3>Tabs with soft transitioning effect.</h3>
@@ -279,9 +274,13 @@
 					<div class="pricing-card-wrapper">
 					<div class="pricing-card">
 						<div class="pricing-card-body">
-							<div class="pricing-card-caption">Basic</div>
-							<div class="price">$<span class="zero">0</span></div>
-							<p>Free for Life</p>
+							<div class="pricing-card-caption">
+								<p>Basic</p>
+							</div>
+							<div class="price-container">
+								<div class="price">$<span class="zero">0</span></div>
+								<p>Free for Life</p>
+							</div>
 						</div>
 						<ul class="features">
 							<li class="features-item">1 gb of space</li>
@@ -294,10 +293,14 @@
 					</div>
 					<div class="pricing-card">
 						<div class="pricing-card-body">
-							<div class="pricing-card-caption">Professional</div>
-							<div class="price">$<span class="one">1</span><span class="nine">9</span></div>
-							<p>Monthly Payment</p>
-							<p class="pricing-card-item">our most popular</p>
+							<div class="pricing-card-caption">
+								<p>Professional</p>
+							</div>
+							<div class="price-container">
+								<div class="price">$<span class="one">1</span><span class="nine">9</span></div>
+								<p>Monthly Payment</p>
+								<p class="pricing-card-item">our most popular</p>
+							</div>
 						</div>
 						<ul class="features">
 							<li class="features-item">5 gb of space</li>
@@ -310,9 +313,13 @@
 					</div>
 					<div class="pricing-card">
 						<div class="pricing-card-body">
-							<div class="pricing-card-caption">Enterprise</div>
-							<div class="price">$<span class="seven">7</span><span class="zero">0</span></div>
-							<p>Monthly Payment</p>
+							<div class="pricing-card-caption">
+								<p>Enterprise</p>
+							</div>
+							<div class="price-container">
+								<div class="price">$<span class="seven">7</span><span class="zero">0</span></div>
+								<p>Monthly Payment</p>
+							</div>
 						</div>
 						<ul class="features">
 							<li class="features-item">unlimited space</li>
@@ -337,7 +344,9 @@
 					</div>
 					<div class="customer-wrapper">
 						<div class="customer-reviews">
-							<p class="customer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi excepturi dicta repudiandae iste, suscipit alias commodi porro provident accusantium sunt.</p>
+							<div class="customer-reviews-container">
+								<p class="customer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi excepturi dicta repudiandae iste, suscipit alias commodi porro provident accusantium sunt.</p>
+						</div>
 							<div class="customer-name">
 								<div class="block-name">
 									<p class="name">Jeremy N.</p>
@@ -346,8 +355,10 @@
 							</div>	
 						</div>
 						<div class="customer-reviews">
-							<p class="customer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi excepturi dicta repudiandae iste, suscipit alias
-								commodi porro provident accusantium sunt.</p>
+							<div class="customer-reviews-container">
+								<p class="customer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi excepturi dicta repudiandae iste, suscipit alias
+									commodi porro provident accusantium sunt.</p>
+							</div>
 							<div class="customer-name">
 								<div class="block-name">
 									<p class="name">John S.</p>
@@ -356,8 +367,10 @@
 							</div>
 						</div>
 						<div class="customer-reviews">
-							<p class="customer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi excepturi dicta repudiandae iste, suscipit alias
-								commodi porro provident accusantium sunt.</p>
+							<div class="customer-reviews-container">
+								<p class="customer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi excepturi dicta repudiandae iste, suscipit alias
+									commodi porro provident accusantium sunt.</p>
+							</div>
 							<div class="customer-name">
 								<div class="block-name">
 									<p class="name">Susan W.</p>

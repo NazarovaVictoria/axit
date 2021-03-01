@@ -1,6 +1,7 @@
 @import "./fonts.css";
 @import "./reset.css";
 @import "./settings.css";
+@import "./responsive.css";
 .intro {
   background-image: url("../img/wr-intro/background.jpg");
   background-size: cover;
@@ -43,6 +44,12 @@ header .wrapper {
 .logo span {
   color: #ff8b38;
 }
+.logo span:hover {
+  color: #fff;
+}
+.logo:hover {
+  color: #ff8b38;
+}
 
 .nav ul {
   display: flex;
@@ -59,10 +66,14 @@ header .wrapper {
   text-transform: capitalize;
   font-size: 12px;
 }
+.nav a:hover {
+  color: #ff8b38;
+}
 
 .wr-intro {
   display: flex;
   justify-content: space-around;
+  overflow: hidden;
 }
 
 .axit-title-form {
@@ -121,6 +132,10 @@ header .wrapper {
   border-radius: 2px;
   padding: 13px 30px;
   text-decoration: none;
+}
+.axit-title a:hover {
+  color: #ee802f;
+  background-color: #fff;
 }
 
 .form-header {
@@ -278,31 +293,43 @@ header .wrapper {
   max-width: 320px;
 }
 
-.tabs-image {
+.tabs-container {
   width: 110px;
   position: relative;
 }
-.tabs-image span {
+.tabs-container span {
+  font-family: "OpenSans-Bold", sans-serif;
+  font-size: 12px;
   color: #fff;
   text-transform: uppercase;
 }
-.tabs-image .tab1 {
+.tabs-container .tab1 {
   position: absolute;
   top: 17%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.tabs-image .tab2 {
+.tabs-container .tab2 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.tabs-image .tab3 {
+.tabs-container .tab3 {
   position: absolute;
   top: 82%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.tabs-item {
+  background-color: #000;
+  width: 110px;
+  height: 110px;
+  border: 1px solid #c7c7c7;
+}
+.tabs-item:hover {
+  background-color: #ff8b38;
 }
 
 .tabs-text {
@@ -320,6 +347,10 @@ header .wrapper {
   border-radius: 3px;
   display: inline-block;
   margin-top: 50px;
+}
+.tabs-text a:hover {
+  background-color: #333;
+  color: #ff8b38;
 }
 
 .b-tab {
@@ -347,7 +378,9 @@ header .wrapper {
 }
 
 .img {
-  width: 42%;
+  max-width: 454px;
+  height: auto;
+  overflow: hidden;
 }
 
 .sub-list-section {
@@ -433,7 +466,7 @@ header .wrapper {
 }
 .standart-text h3 {
   font-family: "OpenSans-Bold", sans-serif;
-  font-style: 16px;
+  font-size: 16px;
   margin-bottom: 60px;
   position: relative;
 }
@@ -473,7 +506,8 @@ header .wrapper {
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 400;
-  margin: 105px 0 30px 0;
+  padding-top: 105px;
+  margin-bottom: 30px;
 }
 .card-group-title p {
   font-family: "OpenSans-Regular", sans-serif;
@@ -538,10 +572,11 @@ header .wrapper {
 
 .pricing-wrapper {
   padding-bottom: 96px;
+  overflow: hidden;
 }
 
 .pricing-card {
-  min-width: 343px;
+  width: 343px;
 }
 .pricing-card:nth-child(2) {
   margin: 0 40px 0 40px;
@@ -557,7 +592,7 @@ header .wrapper {
 .pricing-card-body {
   text-align: center;
 }
-.pricing-card-body .pricing-card-caption {
+.pricing-card-body .pricing-card-caption p {
   font-family: "OpenSans-Bold", sans-serif;
   font-size: 16px;
   color: #fff;
@@ -651,7 +686,7 @@ header .wrapper {
 
 .customer-name {
   display: flex;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 .customer-name::before {
   content: "";
@@ -678,8 +713,8 @@ header .wrapper {
 
 .block-name {
   flex-direction: column;
-  padding-left: 15px;
-  margin-top: 15px;
+  margin-left: 15px;
+  padding-top: 15px;
 }
 
 .design {
@@ -695,14 +730,17 @@ header .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 63px;
 }
 .design-group-title h2 {
   font-family: "Raleway-Regular", sans-serif;
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 400;
-  margin: 74px 0 0 0;
+  padding-top: 75px;
+  margin-bottom: 70px;
   color: #fff;
+  position: relative;
 }
 .design-group-title h2::after {
   content: "";
@@ -710,13 +748,16 @@ header .wrapper {
   width: 65px;
   height: 2px;
   background-color: #fff;
-  margin: 30px auto;
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .design-group-title p {
   font-family: "Raleway-Light", sans-serif;
   font-size: 12px;
   color: #9c9992;
-  margin: 0;
+  margin-bottom: 33px;
 }
 .design-group-title a {
   font-family: "OpenSans-SemiBold", sans-serif;
@@ -726,8 +767,6 @@ header .wrapper {
   border: 2px solid #fff;
   padding: 13px 30px;
   text-decoration: none;
-  margin-top: 33px;
-  margin-bottom: 63px;
 }
 .design-group-title a:hover {
   color: #ee802f;
@@ -750,6 +789,10 @@ header .wrapper {
   padding: 16px 24px;
   color: #fff;
   border-radius: 3px;
+}
+.contact-btn a:hover {
+  background-color: #333;
+  color: #ff8b38;
 }
 
 .form-wrapper {
@@ -810,4 +853,10 @@ header .wrapper {
   text-align: center;
   padding: 15px 0 15px 0;
   margin: 0;
+}
+
+@media (max-width: 576px) {
+  .wrapper {
+    max-width: none;
+  }
 }

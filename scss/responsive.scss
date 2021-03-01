@@ -1,0 +1,32 @@
+@media(max-width:1200px) {
+	.wrapper {
+		max-width: 970px;
+	}
+}
+@media(max-width:969px) {
+	.wrapper {
+		max-width: 750px;
+	}
+	// .sub-list-title {
+	
+	.sub-list-wrapper {
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+	}
+}
+
+@media(max-width:767px) {
+	.wrapper {
+		max-width: 750px;
+	}
+	.sub-list-wrapper {
+		display: block;
+	}
+}
+
+@media(max-width:576px) {
+	.wrapper {
+		max-width: none;
+	}
+}
