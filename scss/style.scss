@@ -813,21 +813,28 @@ header .wrapper {
 	}
 }
 .form-footer {
-	display: flex;
+	// display: flex;
 }
 .form-wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 100%;
+	// width: 100%;
 }
 .form-group-left {
-	width: 530px;
-	flex: 0 1 50%;
+	width: 45%;
+	& input {
+		width: 100%;
+	}
+		
 }
 .form-group-right {
-	width: 530px;
-	flex: 0 1 50%;
+	width: 45%;
+	width: 50%;
+	& textarea {
+		width: 100%;
+	}
+	
 }
 
 .form-btn {
@@ -955,6 +962,16 @@ header .wrapper {
 		}
 
 		
+	}
+}
+.card-group-title {
+	& p {
+		font-size: 14px;
+	}
+}
+.card {
+	p {
+		font-size: 14px;
 	}
 }
 
