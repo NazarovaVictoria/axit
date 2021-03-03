@@ -32,7 +32,7 @@
 					</ul>
 				</nav>
 			</div>
-			</header>
+		</header>
 		
 		
 		<section class="wr-intro">
@@ -61,8 +61,9 @@
 					</form>
 				</div>
 			</div>
-			</div>
+		
 		</section>
+	</div>
 		<section class="social-media">
 			<div class="wrapper">
 				<div class="sm-wrapper">
@@ -121,34 +122,43 @@
 		<section class="tabs">
 			<div class="wrapper">
 				<div class="tabs-wrapper">
-					<div class="tabs-container">
-						<ul tabs-list>
-							<li class="tabs-item"><button class="b-nav-tab active" data-tab="orange"><span class="tab1">tab 1</span></button></li>
-							<li class="tabs-item"><button class="b-nav-tab" data-tab="green"><span class="tab2">tab 2</span></button></li>
-							<li class="tabs-item"><button class="b-nav-tab" data-tab="blue"><span class="tab3">tab 3</span></button></li>
-						</ul>
+					<div class="tabs-wrapper-media">
+						<div class="tabs-container">
+							<ul tabs-list>
+								<li class="tabs-item"><button class="b-nav-tab active" data-tab="orange"><span class="tab1">tab 1</span></button></li>
+								<li class="tabs-item"><button class="b-nav-tab" data-tab="green"><span class="tab2">tab 2</span></button></li>
+								<li class="tabs-item"><button class="b-nav-tab" data-tab="blue"><span class="tab3">tab 3</span></button></li>
+							</ul>
+						</div>
+						<div class="tabs-text b-tab active" id="orange">
+							<h3>Tabs with soft transitioning effect.</h3>
+							<p>Первая вкладка.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cupiditate nulla quaerat aut ea quia ipsum ullam facere repudiandae tempora fugit corrupti mollitia, natus, hic dicta totam. Nesciunt, tempore explicabo. Quae dolor voluptatibus neque dolore rerum!</p>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius consequuntur nemo harum!</p>
+							<a href="#">Download</a>
+						</div>
+						<div class="tabs-text b-tab" id="green">
+							<h3>Tabs with soft transitioning effect.</h3>
+							<p>Вторая вкладка.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cupiditate nulla quaerat aut ea quia ipsum
+								ullam facere repudiandae tempora fugit corrupti mollitia, natus, hic dicta totam. Nesciunt, tempore explicabo.
+								Quae dolor voluptatibus neque dolore rerum!</p>
+							
+							<a href="#">Download</a>
+						</div>
+						<div class="tabs-text b-tab" id="blue">
+							<h3>Tabs with soft transitioning effect.</h3>
+							<p>Третья вкладка.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, laboriosam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cupiditate nulla quaerat aut ea quia ipsum. Quae dolor voluptatibus neque dolore rerum!</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, maxime.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius consequuntur nemo harum!</p>
+							<a href="#">Download</a>
+						</div>
 					</div>
-					<div class="tabs-text b-tab active" id="orange">
-						<h3>Tabs with soft transitioning effect.</h3>
-						<p>Первая вкладка.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cupiditate nulla quaerat aut ea quia ipsum ullam facere repudiandae tempora fugit corrupti mollitia, natus, hic dicta totam. Nesciunt, tempore explicabo. Quae dolor voluptatibus neque dolore rerum!</p>
-						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius consequuntur nemo harum!</p>
-						<a href="#">Download</a>
+					<div class="tabs-picture">
+						<picture>
+							<source srcset="./img/tabs/houses.webp 1x, 
+												./img/tabs/houses@2x.webp 2x,
+												./img/tabs/houses@3x.webp 3x" type="image/webp">
+							<img src="./img/tabs/houses.png" alt="layout city">
+						</picture>
 					</div>
-					<div class="tabs-text b-tab" id="green">
-						<h3>Tabs with soft transitioning effect.</h3>
-						<p>Вторая вкладка.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cupiditate nulla quaerat aut ea quia ipsum
-							ullam facere repudiandae tempora fugit corrupti mollitia, natus, hic dicta totam. Nesciunt, tempore explicabo.
-							Quae dolor voluptatibus neque dolore rerum!</p>
-						
-						<a href="#">Download</a>
-					</div>
-					<div class="tabs-text b-tab" id="blue">
-						<h3>Tabs with soft transitioning effect.</h3>
-						<p>Третья вкладка.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, laboriosam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cupiditate nulla quaerat aut ea quia ipsum. Quae dolor voluptatibus neque dolore rerum!</p>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, maxime.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius consequuntur nemo harum!</p>
-						<a href="#">Download</a>
-					</div>
-					<img src="./img/slider/houses.png" alt="layout city">
 				</div>
 			</div>
 		</section>
@@ -156,7 +166,12 @@
 			<div class="wrapper">
 				<div class="sub-list-wrapper">
 					<div class="img">
-						<img src="./img/sub-list/houses.jpg" alt="houses">
+						<picture>
+							<!-- <source srcset="./img/sub-list/houses.webp 1x,
+												./img/sub-list/houses@2x.webp 2x,
+												./img/sub-list/houses@3x.webp 3x" type="image/webp"> -->
+							<img src="./img/sub-list/houses.jpg" alt="houses">
+						</picture>
 					</div>
 					<div class="sub-list-section">
 						<div class="sub-list-title">
@@ -206,7 +221,12 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni similique illum fuga.</p>
 					</div>
 					<div class="img">
-						<img src="./img/standart/town.jpg" alt="town">
+						<picture>
+							<source srcset="./img/standart/town.webp 1x,
+												./img/standart/town@2x.webp 2x,
+												./img/standart/town@3x.webp 3x" type="image/webp">
+							<img src="./img/standart/town.jpg" alt="town">
+						</picture>
 					</div>
 				</div>
 			</div>
