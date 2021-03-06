@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 function Tabs() {
   var bindAll = function bindAll() {
@@ -29,4 +29,10 @@ function Tabs() {
   bindAll();
 }
 
-var connectTabs = new Tabs();
+var connectTabs = new Tabs(); // burger
+
+$(function () {
+  $('.menu-open').click(function () {
+    $('.menu').toggleClass('show-menu');
+  });
+});

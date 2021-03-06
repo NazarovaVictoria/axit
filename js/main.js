@@ -1,5 +1,3 @@
-'use strict';
-
 function Tabs() {
 	var bindAll = function () {
 		var menuElements = document.querySelectorAll('[data-tab]');
@@ -7,6 +5,7 @@ function Tabs() {
 			menuElements[i].addEventListener('click', change, false);
 		}
 	}
+	
 
 	var clear = function () {
 		var menuElements = document.querySelectorAll('[data-tab]');
@@ -28,3 +27,11 @@ function Tabs() {
 }
 
 var connectTabs = new Tabs();
+
+// burger
+$(function () {
+	$('.menu-open').click(function () {
+		$('.menu').toggleClass('show-menu')
+	})
+});
+
