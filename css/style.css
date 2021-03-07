@@ -896,9 +896,8 @@ header .wrapper {
 .header .show-menu {
   display: block;
   position: absolute;
-  right: -130px;
+  right: 30px;
   top: 80px;
-  width: 50%;
 }
 .header .show-menu li {
   margin-bottom: 10px;
@@ -1100,6 +1099,32 @@ header .wrapper {
 
   .tabs-wrapper {
     padding: 0;
+    width: 100%;
+  }
+  .tabs-wrapper .tabs-picture {
+    margin-top: 50px;
+  }
+  .tabs-wrapper .tabs-text {
+    width: 100%;
+  }
+
+  .tabs-wrapper-media {
+    flex-direction: column;
+  }
+
+  .tabs-container {
+    display: flex;
+    width: auto;
+    margin-bottom: 50px;
+  }
+
+  .b-tab.active {
+    text-align: center;
+  }
+
+  .b-nav-tab {
+    width: 90px;
+    height: 90px;
   }
 
   .sub-list-wrapper {
@@ -1249,6 +1274,7 @@ header .wrapper {
 
   .menu-open {
     display: block;
+    position: relative;
   }
 
   .sm-wrapper {
@@ -1332,8 +1358,9 @@ header .wrapper {
   }
 
   .title-block {
-    width: 70%;
-    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
   }
 
   .standart-wrapper {
@@ -1411,13 +1438,30 @@ header .wrapper {
     text-align: center;
     line-height: 1.6;
   }
-}
-.form-wrapper .form-input {
-  margin-top: 30px;
-}
 
-.footer-icons svg {
-  width: 20px;
-  height: 20px;
-  margin: 0 10px;
+  .form-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-wrapper .form-input {
+    margin-top: 30px;
+  }
+
+  .form-group-left {
+    width: 100%;
+  }
+
+  .form-group-right {
+    width: 100%;
+  }
+
+  .footer-icons svg {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+  }
+
+  .contact-wrapper {
+    padding-bottom: 60px;
+  }
 }

@@ -893,9 +893,8 @@ header .wrapper {
 	& .show-menu {
 		display: block;
 		position: absolute;
-		right: -130px;
+		right: 30px;
 		top: 80px;
-		width: 50%;
 		& li {
 			margin-bottom: 10px;
 		}
@@ -1093,6 +1092,28 @@ header .wrapper {
 
 	.tabs-wrapper {
 		padding: 0;
+		width: 100%;
+		& .tabs-picture {
+			margin-top: 50px;
+		}
+		& .tabs-text {
+			width: 100%;
+		}
+	}
+	.tabs-wrapper-media {
+		flex-direction: column;
+	}
+	.tabs-container {
+		display: flex;
+		width: auto;
+		margin-bottom: 50px;
+	}
+	.b-tab.active {
+		text-align: center;
+	}
+	.b-nav-tab {
+		width: 90px;
+		height: 90px;
 	}
 
 	.sub-list-wrapper {
@@ -1241,7 +1262,7 @@ header .wrapper {
 	}
 	.menu-open {
 		display: block;
-		 
+		position: relative;
 	}
 	.sm-wrapper {
 		display: flex;
@@ -1317,8 +1338,9 @@ header .wrapper {
 		}
 	}
 	.title-block {
-		width: 70%;
-		text-align: center;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
 	}
 	.standart-wrapper {
 		padding-top: 70px;
@@ -1389,11 +1411,19 @@ header .wrapper {
 			line-height: 1.6;
 		}
 	}
-}
+
 .form-wrapper {
+	display: flex;
+	flex-direction: column;
 	& .form-input {
 		margin-top: 30px;
 	}
+}
+.form-group-left{
+	width: 100%;
+}
+.form-group-right {
+	width: 100%;
 }
 .footer-icons {
 	svg {
@@ -1402,4 +1432,7 @@ header .wrapper {
 		margin: 0 10px;
 	}
 }
-
+.contact-wrapper {
+	padding-bottom: 60px;
+}
+}
